@@ -169,7 +169,7 @@ main {
 footer{
   text-align: center;
   padding: 5px 0; /* Ajuste o padding para não ter laterais */
-  background-color: rgb(49, 12, 13);
+  background-color: rgba(49, 12, 13, 0.445);
   color:#a47a1e ;
   text-transform: lowercase;
   width: 100%; 
