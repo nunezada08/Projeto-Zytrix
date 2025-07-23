@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(122, 55, 64);
+}
+
+header {
+  background-color: azure;
+  display: flex;
+  padding: 20px 35px;
+}
+
+.imagem-home {
+  display: flex;
+  height: 45px;
+  margin-right: 40px;
+}
+
+#perfil-header {
+  display: flex;
+  margin-right: auto;
+  margin-top: 7px;
+}
+
+#marca {
+  margin: auto;
+  margin-left: 10px;
+  font-size: 55px;
+  background: linear-gradient(
+    180deg,
+    #f80606 0%,
+    #573939 44.71%,
+    #4d4242 70.67%,
+    #756565 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pesquisa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+  background-color: azure;
+  border: 2.5px solid black;
+  width: 270px;
+  height: 40px;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+
+#input-pesquisa {
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 17px;
+  padding: 0;
+  background-color: azure;
+}
+
+#icon-lupa {
+  color: black;
+  display: flex;
+  height: 24px;
+  margin-top: 12px;
+  margin-right: 12px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+}
+
+.perfumes {
+  flex-direction: column;
+  
+}
+.perfume-1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 1000px;
+  background-color: azure;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+.perfume-2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 1000px;
+  background-color: azure;
+  margin-bottom: 10px;
+  margin-top: 25px;
+
+}
+.perfume-3 {
+  width: 150px;
+  height: 150px;
+  border-radius: 1000px;
+  background-color: azure;
+ margin-bottom: 10px;
+  margin-top: 25px;
+}
