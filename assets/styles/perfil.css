@@ -23,6 +23,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  font-family: "Playfair Display", serif;
 }
 
 #imagem-home {
@@ -47,13 +48,28 @@ header {
 }
 
 #marca {
+  display: flex;
   font-size: 40px;
   background: linear-gradient(180deg, #a47a1e 0%, #ffec94 50%, #ffffff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-right: 42px;
+  align-items: center;
+  justify-content: center;
 }
+
+.logout{
+  color: #ffec94;
+  display: flex;
+  font-size: small;
+  margin-right: 25px;
+  transition: transform 0.3s ease;
+}
+.logout :hover{
+  transform: scale(1.15);
+
+}
+
 
 body {
   min-height: 100vh;
@@ -61,6 +77,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+main {
+    flex-grow: 1; /* Permite que o conteúdo principal se expanda, empurrando o footer para baixo */
+    width: 100%; /* Garante que o conteúdo principal ocupe toda a largura */
 }
 
 
@@ -90,35 +110,76 @@ body {
   margin-top: 12px;
   border-radius: 45px;
 }
-#div-config :hover{
-  transition: all 0.5s ease-in-out;
-  background-color:rgb(133, 49, 54);
-  border-radius: 30px;
+
+.container{
+  display: flex;
+  gap: 20%;
+  padding: 5px;
+  transition: all 0.5s ease;
   
 }
+.container :hover{
+   transition: all 0.5s ease;
+   background-color: #ffffff;
+   border-radius: 43px;
+}
 
-.section-config {
+.box{
   display: flex;
+  flex-direction: column; 
+  justify-content: center; 
   align-items: center;
-  justify-content: space-between;
-  background-color: rgb(250, 250, 250);
-  border: black 2px solid;
-  height: 160px;
-  width: 350px;
+  border: #a47a1e solid 5px;
+  width: 450px;
+  height: 250px;
+  background-color:  rgb(70, 17, 19);;
+  margin:20px; 
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
 }
 
-#titulo{
+
+.content{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:start;
+  padding: 20px;
+}
+ .separator{
+  display: flex;
+  width: 100%; 
+  height: 1px;
+  background-color:black;
+}
+
+#textao{
   color: #a47a1e;
-  width: 347px;
-  margin-bottom: 10px;
-  padding: 10px;
+  justify-content: center;
+  display: flex;
+  text-align: start;
 }
-#config-text {
-  font-size: 20px;
+
+ p{
+  display: flex;
+  margin-top: 5px;
+  text-align: center;
 }
-#pequeno-text{
-  font-size: 15px;
-  margin-left: 5px;
+
+
+footer{
+  text-align: center;
+  padding: 5px 0; /* Ajuste o padding para não ter laterais */
+  background-color: rgb(49, 12, 13);
+  color:#a47a1e ;
+  text-transform: lowercase;
+  width: 100%; 
 }
+
+
+
+
+
+
+
+
 
