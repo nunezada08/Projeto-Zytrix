@@ -40,38 +40,8 @@ header {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.pesquisa {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: start;
-  background-color: azure;
-  border: 2.5px solid black;
-  width: 270px;
-  height: 40px;
-  border-radius: 25px;
-  margin-top: 15px;
-}
-
-#input-pesquisa {
-  border: none;
-  outline: none;
-  padding: 8px;
-  font-size: 17px;
-  padding: 0;
-  background-color: azure;
-}
-
-#icon-lupa {
-  color: black;
-  display: flex;
-  height: 24px;
-  margin-top: 12px;
-  margin-right: 12px;
-  margin-left: 10px;
-  margin-bottom: 8px;
+  position: relative;
+  right: 120px;
 }
 
 .imagem-perfil {
@@ -83,7 +53,7 @@ header {
   border-radius: 1000px;
   position: relative;
   left: 520px;
-  bottom: 100px;
+  top: 10px;
 }
 .nome-perfil {
   display: flex;
@@ -95,7 +65,7 @@ header {
   text-align: center;
   position: relative;
   left: 510px;
-  bottom: 80px;
+  top: 15px;
 }
 
 #icone-perfil {
@@ -109,101 +79,7 @@ header {
   margin-left: 80px;
 }
 
-#outrasContas {
-  position: relative;
-  left: 975px;
-  top: 20px;
-}
-
-.loginFormas {
-  flex-direction: column;
-  align-items: end;
-}
-.loginFormas :hover{
-  background-color:rgb(122, 55, 64);
-    color: rgb(0, 0, 0);
-    transform: translateY(-2px);
-}
-
-.loginGoogle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: azure;
-  border: 2.5px solid black;
-  width: 200px;
-  height: 40px;
-  border-radius: 25px;
-  position: relative;
-  left: 945px;
-  top: 45px;
-  text-decoration: none;
-  color: #0066ff;
-}
-#google-icon {
-  height: 20px;
-  position: relative;
-  right: 10px;
-}
-
-.loginFace {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: azure;
-  border: 2.5px solid black;
-  width: 200px;
-  height: 40px;
-  border-radius: 25px;
-  position: relative;
-  left: 945px;
-  top: 55px;
-  text-decoration: none;
-  color: #0066ff;
-}
-#facebook-icon {
-  height: 35px;
-  position: relative;
-  right: 5px;
-}
-
-.loginX {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: azure;
-  border: 2.5px solid black;
-  width: 200px;
-  height: 40px;
-  border-radius: 25px;
-  position: relative;
-  left: 945px;
-  top: 65px;
-  text-decoration: none;
-  color: #0066ff;
-}
-
-
-#x-icon {
-  height: 20px;
-  position: relative;
-  right: 30px;
-}
-.logout{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 40px;
-  border-radius: 25px;
-  position: relative;
-  left: 945px;
-  top: 80px;
-  color: #f80606;
-}
-#logout-icon{
-  height: 20px;
-  margin-left: 5px;
-  color: #f80606;
+.privacidade{
+ 
 }
 
