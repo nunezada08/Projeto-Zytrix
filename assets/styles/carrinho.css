@@ -66,6 +66,7 @@ header {
 
 body {
   min-height: 100vh;
+  min-width: 100vw;
   background: rgb(191, 207, 219);
   display: flex;
   flex-direction: column;
@@ -74,8 +75,7 @@ body {
 
 main {
   flex: 1;
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,11 +135,18 @@ main {
 }
 
 #total {
-  padding: 200px;
+  padding: 180px;
   border-radius: 10px;
-  width: 450px;
+  width: 380px;
   border: rgb(0, 51, 102) 4px solid;
   background-color: white;
+  box-sizing: border-box; /*garante que o padding não estoure o limite do body*/
+}
+#total h1{
+  background-color:black ;
+}
+#total p{
+  background-color: black;
 }
 .perfume img {
   height: 90px;
@@ -148,4 +155,3 @@ main {
 .perfume :hover img {
   transform: scale(1.25);
 }
-
