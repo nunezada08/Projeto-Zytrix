@@ -73,12 +73,9 @@ body {
 }
 
 main {
-  flex: 1;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-grow: 1; /* Permite que o conteúdo principal se expanda, empurrando o footer para baixo */
+  width: 100%;
+
 }
 
 #section-align {
@@ -110,7 +107,6 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  
 }
 .perfume p {
   color: rgb(0, 51, 102);
@@ -172,6 +168,7 @@ main {
 color:rgb(0, 51, 102);
 font-size: 22px;
 }
+
 
 
 
