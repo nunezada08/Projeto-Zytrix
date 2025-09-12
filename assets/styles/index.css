@@ -7,33 +7,79 @@
 body {
   background-color: #7a3740;
 }
+
 header {
   background-color: floralwhite;
   display: flex;
-  padding: 20px 25px;
+  padding: 2px 25px;
   justify-content: space-between;
   text-align: center;
-  /* gap: 38%; */
+
+}
+
+header:hover{
+   background-color: rgb(68, 26, 26);
+  display: flex;
+  padding: 2px 25px;
+  justify-content: space-between;
+  text-align: center;
+  transition: 0.7s;
 }
 #imagem-inicio {
   width: 100%;
+  display: block;
+}
+#inicio{
+  margin-top: 30px;
+  padding: 15px;
+}
+#imagem-inicio:hover {
+   background-color: #ffedf0;
+   border-radius: 4%;
+   transition: 0.5s;
+}
+.btn{
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 .icons {
   display: flex;
   gap: 5px;
-  padding: 12px;
+  padding: 13px;
   justify-content: space-between;
   display: flex;
   height: 60px;
   margin: 10px;
 }
+
 #icon-local:hover {
-   background-color: #b1a5a5;
+   background-color: #7a3740;
+   border-radius: 50%;
+   transition: 0.3s;
+}
+
+#icon-lupa:hover {
+   background-color: #7a3740;
+   border-radius: 50%;
+   transition: 0.3s;
+}
+
+#icon-pessoa:hover {
+   background-color: #7a3740;
+   border-radius: 50%;
+   transition: 0.3s;
+}
+
+#icon-sacola:hover {
+   background-color: #7a3740;
+   border-radius: 50%;
+   transition: 0.3s;
 }
 h1 {
   width: 129px;
   height: 54px;
-  font-family: "Inknut Antiqua";
+  font-family: "TASA Explorer";
   font-size: 55px;
   font-style: normal;
   font-weight: 400;
@@ -52,4 +98,21 @@ h1 {
 }
 #marca {
   margin-top: 30px;
+}
+.texto-da-marca{
+  padding: 40px;
+  height: auto;
+  width: 25%;
+  display:flex;
+  background: #faf8f8;
+  border-radius: 45PX;
+  margin-top: 30%;
+  margin: 29px;
+  transition: 0.7s;
+  justify-content: space-between;
+}
+.texto-da-marca:hover{
+  background-color: #7c5156;
+   transition: 0.7s;
+   color:rgb(58, 9, 9)
 }
