@@ -1,34 +1,55 @@
-*{
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #7A3740;
+body {
+  background-color: #7a3740;
 }
-header{
-    background-color: floralwhite;
-    display: flex;
-    padding: 20px 25px; 
-    justify-content: center;
-    text-align: center;
-    
+header {
+  background-color: floralwhite;
+  display: flex;
+  padding: 20px 25px;
+  justify-content: space-between;
+  text-align: center;
+  /* gap: 38%; */
 }
-h1{
-width: 129px;
-height: 54px;
-font-family: "Inknut Antiqua";
-font-size: 36px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px; /* 83.333% */
-background: linear-gradient(180deg, #F80606 0%, #573939 44.71%, #4D4242 70.67%, #756565 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-justify-content: space-between;
+#imagem-inicio {
+  width: 100%;
 }
-#marca{
-    margin-top: 30px;
+.icons {
+  display: flex;
+  gap: 5px;
+  padding: 12px;
+  justify-content: space-between;
+  display: flex;
+  height: 60px;
+  margin: 10px;
+}
+#icon-local:hover {
+   background-color: #b1a5a5;
+}
+h1 {
+  width: 129px;
+  height: 54px;
+  font-family: "Inknut Antiqua";
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 83.333% */
+  background: linear-gradient(
+    180deg,
+    #f80606 0%,
+    #573939 44.71%,
+    #4d4242 70.67%,
+    #756565 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  justify-content: space-between;
+}
+#marca {
+  margin-top: 30px;
 }
