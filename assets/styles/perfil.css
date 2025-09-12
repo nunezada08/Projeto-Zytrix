@@ -12,12 +12,20 @@ header{
     background-color: azure;
     display: flex;
     padding: 20px 35px;
-    justify-content: space-between;
+    justify-content:space-between
+    
 }
 
 .imagem-home{
     display: flex;
     height: 45px;
+}
+
+h1{
+    display: flex;
+    height: auto;
+    justify-content: left;
+
 }
 
 .item{
