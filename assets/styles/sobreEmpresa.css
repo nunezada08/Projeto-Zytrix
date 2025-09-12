@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(122, 55, 64);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: azure;
+    display: flex;
+    padding: 30px 45px;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.flex-container {
+    width: 90%;
+    height: 20vh;
+    background-color: azure;
+    margin: 0 auto 20px;
+    border-radius: 60px;
+    border: 6px  rgb(59, 3, 10);
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
+
+
+h1 {
+    font-size: 50px;
+     text-align: center;
+      box-shadow: 0 0 10px rgb(17, 15, 2);
+}
+
+
+
+h2 {
+     font-size: 60px;
+  text-align: center;
+  color: azure;
+ box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
