@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap");
+
 * {
+    font-family: "TASA Explorer", sans-serif;;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,36 +13,83 @@ body {
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(180deg, #7A3740 0%, #843C45 35%, #E06576 100%);
-
+    overflow: hidden;
 }
 
-section {
-
-    background-color: black;
-    color: white;
-    width: 513px;
-    height: 509px;
-    max-height: 100vh;
-    border-radius: 30px;
+#container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: black;
+    width: 430px;
+    height: 430px;
+    max-height: 100vh;
+    border-radius: 30px;
     gap: 35px;
-    font-family: "TASA Explorer", sans-serif;
-    border: 2.5px solid black;
+    box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.5);
 }
 
-#usuario {
-    width: 345px;
-    height: 67px;
-    border-radius: 20px;
-    background: #FFF;
+.interacao-usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: start;
+    background-color: white;
+    color: black;
+    width: 270px;
+    height: 40px;
+    border-radius: 25px;
 }
 
-#senha {
-    width: 345px;
-    height: 67px;
-    border-radius: 20px;
-    background: #FFF;
+.interacao-usuario img {
+    margin-left: 10px;
+    width: 26px;
+    height: 26px;
+}
+
+#bem-vindo {
+    font-size: 40px;
+    color: white;
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    width: 180px;
+    height: 40px;
+    transition: all 0.6s ease;
+}
+
+#login:hover {
+    background: linear-gradient(180deg, #7A3740 0%, #843C45 35%, #E06576 100%);
+    color: white;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.interacao-usuario input {
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+   width: 100%;
+   padding-left: 2px;
+}
+
+#registrar {
+    margin-top: -30px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#registrar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
