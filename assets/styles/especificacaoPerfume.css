@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap");
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #7A3740;
+}
+header{
+    background-color: floralwhite;
+    display: flex;
+    padding: 20px 25px; 
+    justify-content: center;
+    text-align: center;
+}
+
+
+
