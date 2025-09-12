@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(122, 55, 64);
+}
+
+header{
+    background-color: azure;
+    display: flex;
+    padding: 20px 35px;
+    justify-content: space-between;
+}
+
+.imagem-home{
+    display: flex;
+    height: 45px;
+}
+
+.item{
+    background-color: rgb(204, 203, 203);
+    width: 25%;
+    height: auto;
+    justify-content: end;
+    border-radius: 15px;
+    display: flex;
+    margin-right: 50px;
+    
+}
+
