@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #7A3740 0%, #843C45 35%, #E06576 100%);
+
+}
+
+section {
+
+    background-color: black;
+    color: white;
+    width: 513px;
+    height: 509px;
+    max-height: 100vh;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    font-family: "TASA Explorer", sans-serif;
+    border: 2.5px solid black;
+}
+
+#usuario {
+    width: 345px;
+    height: 67px;
+    border-radius: 20px;
+    background: #FFF;
+}
+
+#senha {
+    width: 345px;
+    height: 67px;
+    border-radius: 20px;
+    background: #FFF;
+}
