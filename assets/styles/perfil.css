@@ -12,19 +12,19 @@ header{
     background-color: azure;
     display: flex;
     padding: 20px 35px;
-    justify-content:space-between
-    
+   
 }
 
 .imagem-home{
     display: flex;
     height: 45px;
+    margin-right: 40px
 }
 
-h1{
+#perfil-header{
     display: flex;
-    height: auto;
-    justify-content: left;
+    margin-right: auto;
+    margin-top: 7px;
 
 }
 
