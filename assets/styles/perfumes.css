@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Monserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -14,3 +14,129 @@ body {
     min-height: 100vh;
     background: linear-gradient(180deg, #7A3740 0%, #984550 29.81%, #E06576 100%);
 }
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out; 
+    transition-delay: 0.1s;
+    border-radius: 20px;
+    
+}
+
+.card:hover {
+    width: 600px;
+    transition-delay: 0;
+}
+
+.card .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card .circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #D9D9D9;
+    border: 8px solid #000;
+    transition: all 0.5s ease-in-out;
+    filter: drop-shadow(0 0 10px #000) drop-shadow(0 0 60px #d9d9d9);
+}
+
+.card:hover .circle::before {
+    border-radius: 20px;
+    background: #D9D9D9;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.card .circle .logo {
+    position: relative;
+    width: 200px;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+.card:hover .circle .logo {
+    transform: scale(0);
+    transition-delay: 0s; 
+}
+
+.product_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) rotate(315deg);
+    height: 330px;
+    transition: 0.3s ease-in-out; 
+    transition-delay: 0s; 
+    visibility: hidden;
+}
+
+.card:hover .product_img {
+    visibility: visible;
+    left: 80%;
+    transform: translate(-50%, -50%) scale(1) rotate(15deg);
+    transition-delay: 0.5s; 
+}
+
+.card .content {
+    position: absolute;
+    width: 50%;
+    left: 20%;
+    padding: 20px;
+    opacity: 0;
+    transition: 0.5s ease-in-out; 
+    visibility: hidden;
+}
+
+.card:hover .content {
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 20px;
+}
+
+.card .content h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+.card .content p {
+    color: #fff;
+}
+
+.card .content a {
+    position: relative;
+    color: #fff;
+    background: #d52b1e;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+
