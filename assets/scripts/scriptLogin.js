@@ -6,7 +6,7 @@ document.getElementById('login').addEventListener('click', function () {
     const senhaSalva = localStorage.getItem('senha');
 
     if (usuario === usuarioSalvo && senha === senhaSalva) {
-        window.location.href = './index.html'
+        window.location.href = '../index.html'
     } else {
         alert('Usuario ou senha estão incorretos!')
     }
