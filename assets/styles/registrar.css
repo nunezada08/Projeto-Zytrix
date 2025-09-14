@@ -9,11 +9,39 @@
 
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     min-height: 100vh;
     background: linear-gradient(180deg, #7A3740 0%, #843C45 35%, #E06576 100%);
     overflow: hidden;
+
+}
+
+header {
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.125);
+    color: white;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.823);
+}
+
+header h1 {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  background: linear-gradient(180deg, #000000 40%, #dc3b51 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  justify-content: space-between;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #container {
