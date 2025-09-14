@@ -1,0 +1,357 @@
+/* Reset e tipografia do css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Libre Baskerville", Georgia, serif;
+  color: #2b1f20;
+  background: linear-gradient(135deg, #ffd6e0 0%, #ff9cb3 35%, #a30e1a 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  padding-bottom: 40px;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+/* Container principal */
+main {
+  max-width: 980px;
+  margin: 36px auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 28px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 2px solid rgba(163, 15, 26, 0.12);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+}
+.brand h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #6b0f1b;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(163, 15, 26, 0.5);
+}
+.brand .tag {
+  font-size: 1rem;
+  color: #7a2b2f;
+  opacity: 0.9;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+/* Navegação tudo ok */
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.site-nav a {
+  font-weight: 700;
+  color: #4a1620;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  background: rgba(107, 15, 27, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(163, 15, 26, 0.3);
+  outline: none;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  border-radius: 14px;
+  padding: 48px 30px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(250, 240, 240, 0.7)
+  );
+  box-shadow: 0 14px 40px rgba(107, 15, 27, 0.25);
+  border: 1px solid rgba(107, 15, 27, 0.15);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.hero-inner {
+  max-width: 620px;
+}
+.hero h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  color: #50121a;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+.lead {
+  font-size: 1.15rem;
+  color: #3b2326;
+  font-weight: 600;
+  opacity: 0.95;
+  line-height: 1.5;
+  font-family: "Libre Baskerville", serif;
+}
+
+/* Funciona? não (imagem do perfume) */
+.bottle {
+  width: 140px;
+  height: 200px;
+  border-radius: 20px;
+  background: url("assets/maison-bottle.jpg") no-repeat center center;
+  background-size: contain;
+  box-shadow: 0 15px 30px rgba(163, 15, 26, 0.3);
+  transform: rotate(-6deg);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.bottle:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 20px 40px rgba(163, 15, 26, 0.5);
+}
+
+/* About e etc */
+.about {
+  margin-top: 28px;
+  padding: 28px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  border-left: 8px solid rgba(107, 15, 27, 0.15);
+  box-shadow: 0 10px 30px rgba(107, 15, 27, 0.12);
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.1rem;
+  color: #4a1a1f;
+}
+.about h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: #6b0f1b;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+/* — azure meio creme */
+.history {
+  margin-top: 28px;
+  padding: 30px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #f4efe6 0%, #eaf7ff 100%);
+  border: 1px solid rgba(74, 92, 110, 0.08);
+  box-shadow: 0 14px 40px rgba(30, 30, 30, 0.08);
+  color: #2a2523;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.history h3 {
+  font-family: "Playfair Display", serif;
+  color: #4b1d1f;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+.history p {
+  margin: 14px 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #3b2d2c;
+}
+
+/* Contatos ficticios */
+.contact {
+  margin-top: 24px;
+  padding: 22px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px dashed rgba(107, 15, 27, 0.08);
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.1rem;
+  color: #4a1a1f;
+}
+.contact a {
+  color: #6b0f1b;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+.contact a:hover,
+.contact a:focus {
+  color: #a30e1a;
+  outline: none;
+}
+
+/* Footer do site */
+.site-footer {
+  max-width: 980px;
+  margin: 40px auto 0;
+  padding: 24px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  box-shadow: 0 14px 40px rgba(107, 15, 27, 0.12);
+  border-top: 4px solid rgba(107, 15, 27, 0.08);
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  color: #6b0f1b;
+}
+.site-footer .social {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+.site-footer a {
+  color: #6b0f1b;
+  font-weight: 700;
+  text-decoration: none;
+  opacity: 0.95;
+  transition: opacity 0.3s ease;
+}
+.site-footer a:hover,
+.site-footer a:focus {
+  opacity: 1;
+  outline: none;
+}
+.site-footer p {
+  color: #3b2d2c;
+  font-size: 1rem;
+}
+
+/* Responsividade do site */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bottle {
+    align-self: flex-end;
+    width: 120px;
+    height: 170px;
+    margin-top: 20px;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    max-width: 90%;
+    margin: 24px auto;
+  }
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 20px;
+  }
+  .site-nav ul {
+    gap: 12px;
+  }
+  .site-nav a:hover,
+  .site-nav a:focus {
+    background: rgba(163, 15, 26, 0.25);
+    box-shadow: 0 10px 20px rgba(163, 15, 26, 0.5);
+    transform: translateY(-5px) scale(1.1);
+  }
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+  .hero {
+    padding: 26px 20px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+  .site-header {
+    padding: 12px 16px;
+  }
+  .site-nav a:hover,
+  .site-nav a:focus {
+    background: rgba(163, 15, 26, 0.25);
+    box-shadow: 0 10px 20px rgba(163, 15, 26, 0.5);
+    transform: translateY(-5px) scale(1.1);
+  }
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+  .hero {
+    padding: 20px 16px;
+  }
+  .bottle {
+    width: 100px;
+    height: 140px;
+  }
+  main {
+    margin: 18px auto;
+  }
+}
+
+/* Efeitos maneiros */
+.history p:hover {
+  background: rgba(163, 15, 26, 0.1);
+  box-shadow: 0 8px 20px rgba(163, 15, 26, 0.3);
+  border-radius: 8px;
+  padding: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Efeitos de transição */
+body {
+  transition: background 0.5s ease;
+}
+body:hover {
+  background: linear-gradient(135deg, #ffe0e5 0%, #ffb3bf 35%, #b30f1a 100%);
+}
+
+/* Sombras tops */
+h2,
+h3 {
+  transition: all 0.3s ease;
+}
+h2:hover,
+h3:hover {
+  color: #a30e1a;
+  text-shadow: 0 0 8px rgba(163, 15, 26, 0.7);
+  transform: scale(1.05);
+  cursor: pointer;
+}
