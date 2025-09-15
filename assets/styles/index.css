@@ -7,32 +7,88 @@
 body {
   background-color: #7a3740;
 }
+
 header {
   background-color: floralwhite;
   display: flex;
   padding: 20px 25px;
+  padding: 2px 25px;
   justify-content: space-between;
   text-align: center;
   /* gap: 38%; */
+
+}
+
+header:hover{
+   background-color: rgb(68, 26, 26);
+  display: flex;
+  padding: 2px 25px;
+  justify-content: space-between;
+  text-align: center;
+  transition: 0.7s;
+}
+#inicio{
+  margin-top: 30px;
+  padding: 15px;
 }
 #imagem-inicio {
   width: 100%;
+  display: block;
+  border-radius: 25px;
+}
+#imagem-inicio:hover {
+   border: 1px solid rgb(53, 8, 8) ;
+   transition: 0.5s;
+   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 .icons {
   display: flex;
   gap: 5px;
   padding: 12px;
+  padding: 13px;
   justify-content: space-between;
   display: flex;
   height: 60px;
   margin: 10px;
 }
+#icon-pessoa{
+  width: 37px;
+}
+
 #icon-local:hover {
    background-color: #b1a5a5;
+   background-color: #7a3740;
+   border-radius: 50%;
+   transition: 0.3s;
+}
+
+#icon-lupa:hover {
+   background-color: #7a3740;
+   border-radius: 50%;
+   transition: 0.3s;
+}
+
+#icon-pessoa:hover {
+   background-color: #7a3740;
+   border-radius: 50%;
+   transition: 0.3s;
+}
+
+#icon-sacola:hover {
+   background-color: #7a3740;
+   border-radius: 50%;
+   transition: 0.3s;
 }
 h1 {
   width: 129px;
   height: 54px;
+  font-family: "TASA Explorer";
   font-size: 55px;
   font-style: normal;
   font-weight: 400;
@@ -51,4 +107,36 @@ h1 {
 }
 #marca {
   margin-top: 30px;
+}
+.texto-da-marca-perfumes{
+  padding: 50px;
+  height: auto;
+  width: 25%;
+  display:flex;
+  background: #faf8f8;
+  border-radius: 45PX;
+  margin-top: 30%;
+  margin: 29px;
+  transition: 0.7s;
+  justify-content: space-between;
+   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.texto-da-marca-perfumes:hover{
+  background-color: #000000;
+   transition: 0.7s;
+   color:rgb(241, 235, 235);
+   box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+}
+
+.saiba-mais{
+  height: -300px;
+  width: 0px auto;
+  margin-top: 20pc;
+  align-items: center;
+  display: flex;
+  padding: 20px 25px;
+  justify-content: center;
+  color: #000000;
+  
+
 }
