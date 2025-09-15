@@ -65,7 +65,7 @@ header {
   text-align: center;
   position: relative;
   left: 510px;
-  top: 15px;
+  bottom: 75px;
 }
 
 #icone-perfil {
@@ -80,6 +80,73 @@ header {
 }
 
 .privacidade{
- 
+  display: flex;
+  background-color: azure;
+  width: 320px;
+  height: 45px;
+  padding: 35px;
+  position: relative;
+  align-items: center;
+  bottom: 120px;
+  transition: 0.5s ease;
+}
+#privacidade{
+  position: relative;
+  right: 15px;
+  height: 45px;
+}
+.privacidade:hover{
+  transition: 0.3s ease;
+  background-color: rgb(85, 38, 44) ;
+  transform: translateX(2px);
+  color: azure;
+  border-radius: 30px;
 }
 
+.configuracoes{
+  display: flex;
+  background-color: azure;
+  width: 320px;
+  height: 45px;
+  padding: 35px;
+  position: relative;
+  align-items: center;
+  bottom: 100px;
+  transition: 0.5s ease;
+}
+#configuracoes{
+  position: relative;
+  right: 15px;
+  height: 45px;
+}
+.configuracoes:hover{
+  transition: 0.3s ease;
+  background-color: rgb(85, 38, 44) ;
+  transform: translateX(2px);
+  color: azure;
+  border-radius: 30px;
+}
+.logout{
+  display: flex;
+  background-color: azure;
+  width: 150px;
+  height: 45px;
+  padding: 20px;
+  position: relative;
+  align-items: center;
+  bottom: 60px;
+  transition: 0.5s ease;
+}
+#logout{
+  position: relative;
+  height: 45px;
+  top: 10px;
+  left: 4px;
+}
+.logout:hover{
+  transition: 0.3s ease;
+  background-color: rgb(85, 38, 44) ;
+  transform: translateX(2px);
+  color: azure;
+  border-radius: 30px;
+}
