@@ -136,8 +136,38 @@ body {
 
 #registrar a:hover {
     transition: all 0.5s ease;
-    background: linear-gradient(180deg, #7A3740 0%, #843C45 35%, #E06576 100%);
+    background: linear-gradient(180deg,#f80606 0%,#573939 44.71%, #4d4242 70.67%, #756565 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+@media (max-width: 1200px) {
+    #container {
+        width: 95vw;
+        min-width: 320px;
+        max-width: 1000px;
+        gap: 20px;
+    }
+    #login-container, .interacao-usuario {
+        width: 90vw;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 700px) {
+    #container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+    #text-container {
+        margin: 0 0 20px 0;
+        align-items: center;
+        text-align: center;
+    }
+    #login-container {
+        padding-right: 0;
+    }
 }
