@@ -1,11 +1,11 @@
 document.getElementById('login').addEventListener('click', function () {
-    const usuario = document.getElementById('usuario').value;
+    const email = document.getElementById('email').value;
     const senha = document.getElementById('senha').value;
 
-    const usuarioSalvo = localStorage.getItem('usuario');
+    const emailSalvo = localStorage.getItem('email');
     const senhaSalva = localStorage.getItem('senha');
 
-    if (usuario === usuarioSalvo && senha === senhaSalva) {
+    if (email === emailSalvo && senha === senhaSalva) {
         window.location.href = '../index.html'
     } else {
         alert('Usuario ou senha estão incorretos!')

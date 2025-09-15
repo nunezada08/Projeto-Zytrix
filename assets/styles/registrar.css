@@ -9,76 +9,83 @@
 
 body {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     background: linear-gradient(180deg, #7A3740 0%, #843C45 35%, #E06576 100%);
     overflow: hidden;
 
 }
 
-header {
-    padding: 35px;
+#container{
+
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.125);
-    color: white;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.823);
+    background-color: black;
+    width: 1160px;
+    height: 430px;
+    border-radius: 30px;
+    box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.5);
+    gap: 50px;
 }
 
-header h1 {
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-  background: linear-gradient(180deg, #000000 40%, #dc3b51 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  justify-content: space-between;
-}
+#registrar-container {
 
-main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#container {
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    width: 430px;
-    height: 520px;
-    max-height: 100vh;
-    border-radius: 30px;
     gap: 35px;
-    box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.5);
+    width: 580px;
+    padding-right: 46px;
+}
+
+#text-container {
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    margin-bottom: 195px;
+    color: white;
+}
+
+
+#text-container img {
+    margin-left: -20px;
+    margin-top: 10px;
+}
+
+#text-container p {
+
+    font-size: 18px;
+}
+
+#text-container #registrar-se {
+
+    padding-bottom: 20px;
+    font-size: 42px;
 }
 
 .interacao-usuario {
+
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: start;
     background-color: white;
     color: black;
-    width: 270px;
-    height: 40px;
-    border-radius: 25px;
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
 }
 
 .interacao-usuario img {
+
     margin-left: 10px;
     width: 26px;
     height: 26px;
-}
-
-#bem-vindo {
-    font-size: 40px;
-    color: white;
 }
 
 #registre-se {
