@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "TASA Explorer", sans-serif;
+}
+
+body {
+  background-color: rgb(122, 55, 64);
+  color: #333;
+}
+
+header {
+  background-color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.espaco {
+  flex: 1;
+}
+
+header h1 {
+  font-size: 45px;
+  font-weight: 400;
+  color: rgb(122, 55, 64);
+  text-align: center;
+  flex: 1;
+  text-transform: lowercase;
+}
+
+.icones {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icones img {
+  width: 25px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.icones img:hover {
+  background-color: #b1a5a5;
+  border-radius: 5px;
+}
+
+.container {
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.produto img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.detalhes {
+  flex: 1;
+}
+
+.botao {
+  background-color: #7a3740;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.botao:hover {
+  background-color: #5e2930;
+}
+
+.bloco-unido {
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+}
+
+.bloco-unido .secao {
+  margin: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.bloco-unido .secao:last-child {
+  border-bottom: none;
+}
+
+.comentarios {
+  margin: 20px auto;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 900px;
+}
+
+.comentario {
+  margin-bottom: 15px;
+}
+
+.usuario {
+  font-weight: bold;
+}
+
+.estrelas {
+  color: #7a3740;
+  display: block;
+  margin-top: 2px;
+}
+
+.mostrar-wrap {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.mostrar-mais {
+  background: transparent;
+  color: #7a3740;
+  border: 2px solid #7a3740;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 180ms ease, color 180ms ease, transform 120ms ease, box-shadow 180ms ease;
+}
+
+.mostrar-mais:hover {
+  background-color: #7a3740;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  color: rgb(122, 55, 64);
+  margin-top: 20px;
+  text-transform: lowercase;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    padding: 15px;
+  }
+  header h1 {
+    font-size: 34px;
+  }
+  .produto img {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
