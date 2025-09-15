@@ -1,41 +1,152 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(122, 55, 64);
+body {
+  background-color: rgb(122, 55, 64);
 }
 
-header{
-    background-color: azure;
-    display: flex;
-    padding: 20px 35px;
-   
+header {
+  background-color: azure;
+  display: flex;
+  padding: 20px 35px;
 }
 
-.imagem-home{
-    display: flex;
-    height: 45px;
-    margin-right: 40px
+.imagem-home {
+  display: flex;
+  height: 45px;
+  margin-right: 40px;
 }
 
-#perfil-header{
-    display: flex;
-    margin-right: auto;
-    margin-top: 7px;
-
+#perfil-header {
+  display: flex;
+  margin-right: auto;
+  margin-top: 7px;
 }
 
-.item{
-    background-color: rgb(204, 203, 203);
-    width: 25%;
-    height: auto;
-    justify-content: end;
-    border-radius: 15px;
-    display: flex;
-    margin-right: 50px;
-    
+#marca {
+  margin: auto;
+  margin-left: 10px;
+  font-size: 55px;
+  background: linear-gradient(
+    180deg,
+    #f80606 0%,
+    #573939 44.71%,
+    #4d4242 70.67%,
+    #756565 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  right: 120px;
 }
 
+.imagem-perfil {
+  background-color: rgb(255, 255, 255);
+  border-color: black;
+  border: black solid 5px;
+  width: 250px;
+  height: 250px;
+  border-radius: 1000px;
+  position: relative;
+  left: 520px;
+  top: 10px;
+}
+.nome-perfil {
+  display: flex;
+  background-color: azure;
+  border: 2.5px solid black;
+  width: 270px;
+  height: 40px;
+  border-radius: 25px;
+  text-align: center;
+  position: relative;
+  left: 510px;
+  bottom: 75px;
+}
+
+#icone-perfil {
+  width: 200px;
+  margin-left: 20px;
+  margin-top: 12px;
+}
+#nomeDoMano {
+  display: flex;
+  font-size: 30px;
+  margin-left: 80px;
+}
+
+.privacidade{
+  display: flex;
+  background-color: azure;
+  width: 320px;
+  height: 45px;
+  padding: 35px;
+  position: relative;
+  align-items: center;
+  bottom: 120px;
+  transition: 0.5s ease;
+}
+#privacidade{
+  position: relative;
+  right: 15px;
+  height: 45px;
+}
+.privacidade:hover{
+  transition: 0.3s ease;
+  background-color: rgb(85, 38, 44) ;
+  transform: translateX(2px);
+  color: azure;
+  border-radius: 30px;
+}
+
+.configuracoes{
+  display: flex;
+  background-color: azure;
+  width: 320px;
+  height: 45px;
+  padding: 35px;
+  position: relative;
+  align-items: center;
+  bottom: 100px;
+  transition: 0.5s ease;
+}
+#configuracoes{
+  position: relative;
+  right: 15px;
+  height: 45px;
+}
+.configuracoes:hover{
+  transition: 0.3s ease;
+  background-color: rgb(85, 38, 44) ;
+  transform: translateX(2px);
+  color: azure;
+  border-radius: 30px;
+}
+.logout{
+  display: flex;
+  background-color: azure;
+  width: 150px;
+  height: 45px;
+  padding: 20px;
+  position: relative;
+  align-items: center;
+  bottom: 60px;
+  transition: 0.5s ease;
+}
+#logout{
+  position: relative;
+  height: 45px;
+  top: 10px;
+  left: 4px;
+}
+.logout:hover{
+  transition: 0.3s ease;
+  background-color: rgb(85, 38, 44) ;
+  transform: translateX(2px);
+  color: azure;
+  border-radius: 30px;
+}
