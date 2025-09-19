@@ -4,34 +4,42 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: a;
+#div-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#div-config {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  gap: 50px;
 }
 
 header {
-  background-color: rgb(122, 55, 64);
+  background-color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 
-.imagem-home {
+#imagem-home {
   display: flex;
   height: 40px;
   margin-right: 20px;
+  transition: all 0.5s ease;
 }
-.logo-empresa{
+
+.logo-empresa {
   display: flex;
   height: 100px;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
   margin-left: 20px;
 }
-.logo-empresa :hover{
-  transition: 0.5s ease;
-  
-  transform: scale(125%)
-  
+.logo-empresa:hover {
+  transform: scale(1.25);
 }
 
 #perfil-header {
@@ -40,16 +48,62 @@ header {
 
 #marca {
   font-size: 40px;
-  background: linear-gradient(
-    180deg,
-  #a47a1e 0%,
-  #ffec94 50%,
-  #ffffff 100%
-  );
+  background: linear-gradient(180deg, #a47a1e 0%, #ffec94 50%, #ffffff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-right: 42px;
-  
 }
 
+body {
+  min-height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+#perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(250, 250, 250);
+  border: black 2px solid;
+  border-radius: 1000px;
+  height: 200px;
+  width: 200px;
+  margin: 18px;
+}
+#icon-perfil {
+  height: 80%;
+}
+
+#nome-usuario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border: black 2px solid;
+  height: 30%;
+  margin-top: 12px;
+  border-radius: 45px;
+}
+
+.section-config {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(250, 250, 250);
+  border: black 2px solid;
+  border-radius: 30px;
+  height: 200px;
+  width: 350px;
+}
+
+#config-text {
+
+  font-size: 22px;
+
+}
