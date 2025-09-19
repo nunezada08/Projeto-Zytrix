@@ -29,6 +29,7 @@ header {
 }
 .logo-empresa :hover{
   transition: 0.5s ease;
+  
   transform: scale(125%)
   
 }
