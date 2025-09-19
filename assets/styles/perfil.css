@@ -72,8 +72,8 @@ body {
   background-color: rgb(250, 250, 250);
   border: black 2px solid;
   border-radius: 1000px;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   margin: 18px;
 }
 #icon-perfil {
@@ -90,6 +90,12 @@ body {
   margin-top: 12px;
   border-radius: 45px;
 }
+#div-config :hover{
+  transition: all 0.5s ease-in-out;
+  background-color:rgb(133, 49, 54);
+  border-radius: 30px;
+  
+}
 
 .section-config {
   display: flex;
@@ -97,11 +103,22 @@ body {
   justify-content: space-between;
   background-color: rgb(250, 250, 250);
   border: black 2px solid;
-  border-radius: 30px;
-  height: 200px;
+  height: 160px;
   width: 350px;
 }
 
-#config-text {
-  font-size: 22px;
+#titulo{
+  display: flex;
+  color: #a47a1e;
+  width: 347px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
+#config-text {
+  font-size: 20px;
+}
+#pequeno-text{
+  font-size: 15px;
+  margin-left: 5px;
+}
+
