@@ -11,7 +11,7 @@ body {
 body {
   font-family: "Libre Baskerville", Georgia, serif;
   color: #2b1f20;
-  background: linear-gradient(135deg, #ffd6e0 0%, #ff9cb3 35%, #a30e1a 100%);
+  background-image: linear-gradient(to right,#7A3740 0%, #843C45 35%, #E06576 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
@@ -218,7 +218,7 @@ main {
 
 /* Footer do site */
 .site-footer {
-  max-width: 980px;
+  max-width: 100%;
   margin: 40px auto 0;
   padding: 24px;
   border-radius: 14px;
@@ -338,9 +338,6 @@ main {
 /* Efeitos de transição */
 body {
   transition: background 0.5s ease;
-}
-body:hover {
-  background: linear-gradient(135deg, #ffe0e5 0%, #ffb3bf 35%, #b30f1a 100%);
 }
 
 /* Sombras tops */
