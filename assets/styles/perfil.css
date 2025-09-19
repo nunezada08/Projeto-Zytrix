@@ -11,37 +11,34 @@ body {
 header {
   background-color: azure;
   display: flex;
-  padding: 20px 35px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .imagem-home {
   display: flex;
-  height: 45px;
-  position: relative;
-  left: 35px;
-  top: 18px;
+  height: 40px;
+  margin-right: 20px;
 }
 .logo-empresa{
   display: flex;
-  height: 80px;
+  height: 100px;
   transition: transform 0.5s ease;
+  margin-left: 20px;
 }
 .logo-empresa :hover{
   transition: 0.5s ease;
-  transform: scale(140%)
+  transform: scale(125%)
   
 }
 
 #perfil-header {
   display: flex;
-  position: relative;
-  left: 75px;
-  top: 28px;
 }
 
 #marca {
-  position: absolute;
-  font-size: 55px;
+  font-size: 40px;
   background: linear-gradient(
     180deg,
     #f80606 0%,
@@ -52,159 +49,7 @@ header {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position: relative;
-  left: 240px;
-}
-
-.imagem-perfil {
-  background-color: rgb(255, 255, 255);
-  border-color: black;
-  border: black solid 5px;
-  width: 250px;
-  height: 250px;
-  border-radius: 1000px;
-  position: relative;
-  left: 520px;
-  top: 10px;
-  box-shadow: 5px 5px 5px 5px  rgba(0, 0, 0, 0.5);
+  margin-right: 42px;
   
 }
-.nome-perfil {
-  display: flex;
-  background-color: azure;
-  border: 2.5px solid black;
-  width: 270px;
-  height: 40px;
-  border-radius: 25px;
-  text-align: center;
-  position: relative;
-  left: 510px;
-  bottom: 75px;
-}
 
-#icone-perfil {
-  width: 200px;
-  margin-left: 20px;
-  margin-top: 12px;
-}
-#nomeDoMano {
-  display: flex;
-  font-size: 30px;
-  position: absolute;
-  left: 70px;
-}
-
-.privacidade{
-  display: flex;
-  background-color:  azure;
-  width: 330px;
-  height: 50px;
-  padding: 40px;
-  position: relative;
-  align-items: center;
-  bottom: 140px;
-  transition: 0.5s ease;
-  left: 30px;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 15px ;
-}
-#privacidade{
-  position: relative;
-  right: 15px;
-  height: 45px;
-}
-.privacidade:hover{
-  transition: 0.3s ease;
-  background-color: rgb(85, 38, 44) ;
-  transform: translateX(2px);
-  color: azure;
-  border-radius: 30px;
-}
-
-.configuracoes{
-  display: flex;
-  background-color: azure;
-  width: 320px;
-  height: 45px;
-  padding: 38px;
-  position: relative;
-  align-items: center;
-  bottom: 80px;
-  transition: 0.5s ease;
-  left: 30px;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
-}
-#configuracoes{
-  position: relative;
-  right: 15px;
-  height: 45px;
-}
-.configuracoes:hover{
-  transition: 0.3s ease;
-  background-color: rgb(85, 38, 44) ;
-  transform: translateX(2px);
-  color: azure;
-  border-radius: 30px;
-}
-.logout{
-  display: flex;
-  background-color: azure ;
-  width: 160px;
-  height: 45px;
-  padding: 20px;
-  position: relative;
-  align-items: center;
-  bottom: 60px;
-  transition: 0.5s ease;
-  left: 30px;
-  top: 40px;
-  border-radius: 15px;
-  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
-}
-#logout-icon{
-  display: flex;
-  height: 30px;
-  position: relative;
-  left: 30px;
-}
-
-
-.logout:hover{
-  transition: 0.5s ease;
-  background-color: rgb(134, 0, 18) ;
-  transform: translateX(2px);
-  color: azure;
-  border-radius: 30px;
-}
-
-.anuncio{
-  display: flex;
-  justify-content: end;
-  height: 250px;
-  position: absolute;
-  left: 898px;
-  bottom: 260px;
-  transition: ease 0.5s;
-}
-.anuncio :hover{
-  border: 1px solid rgb(53, 8, 8) ;
-   transition: ease 0.5s;
-   box-shadow: rgb(53, 8, 8) 0px 22px 70px 4px;
-   height: 255px;
-}
-.anuncio-2{
-  display: flex;
-  justify-content: end;
-  height: 198px;
-  position: absolute;
-  left: 895px;
-  bottom: 40px;
-  transition: ease 0.8s;
-}
-.anuncio-2 :hover{
-  border: 1px solid rgb(53, 8, 8) ;
-   transition: ease 0.5s;
-   box-shadow: rgb(53, 8, 8) 0px 22px 70px 4px;
-   height: 203px;
-}
