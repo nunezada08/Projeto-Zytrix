@@ -57,7 +57,7 @@ header {
 
 body {
   min-height: 100vh;
-  background: white;
+  background: rgb(122,31,36);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,7 +103,5 @@ body {
 }
 
 #config-text {
-
   font-size: 22px;
-
 }
