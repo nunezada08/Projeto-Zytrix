@@ -5,11 +5,11 @@
 }
 
 body {
-  background-color: rgb(122, 55, 64);
+  background-color: a;
 }
 
 header {
-  background-color: azure;
+  background-color: rgb(122, 55, 64);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,6 +29,7 @@ header {
 }
 .logo-empresa :hover{
   transition: 0.5s ease;
+  
   transform: scale(125%)
   
 }
@@ -41,10 +42,9 @@ header {
   font-size: 40px;
   background: linear-gradient(
     180deg,
-    #f80606 0%,
-    #573939 44.71%,
-    #4d4242 70.67%,
-    #756565 100%
+  #a47a1e 0%,
+  #ffec94 50%,
+  #ffffff 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
