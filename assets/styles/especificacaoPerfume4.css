@@ -10,6 +10,10 @@
 body {
   background-color: rgb(122, 31, 36);
   color: #ffec94;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
 header {
@@ -17,6 +21,8 @@ header {
   padding: 15px 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .espaco {
@@ -26,13 +32,13 @@ header {
 header h1 {
   font-size: 45px;
   font-weight: 400;
-  text-align: center;
-  flex: 1;
-  text-transform: lowercase;
   background: linear-gradient(180deg, #a47a1e 0%, #ffec94 50%, #ffffff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
+  flex: 1;
+  text-transform: lowercase;
 }
 
 .icones {
@@ -50,9 +56,9 @@ header h1 {
 }
 
 .icones img:hover {
+  transform: scale(1.15);
   background-color: #ffffff;
   border-radius: 5px;
-  transform: scale(1.1);
 }
 
 .container {
@@ -63,9 +69,8 @@ header h1 {
   display: flex;
   gap: 20px;
   max-width: 900px;
-  border: 4px solid #a47a1e;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
-  color: #ffec94;
+  border: 5px solid #a47a1e;
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
 }
 
 .produto img {
@@ -76,6 +81,7 @@ header h1 {
 
 .detalhes {
   flex: 1;
+  color: #ffec94;
 }
 
 .botao {
@@ -87,11 +93,13 @@ header h1 {
   cursor: pointer;
   margin-bottom: 15px;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .botao:hover {
   background-color: #ffec94;
   color: #000;
+  transform: scale(1.05);
 }
 
 .bloco-unido {
@@ -100,8 +108,8 @@ header h1 {
   padding: 20px;
   border-radius: 10px;
   max-width: 900px;
-  border: 4px solid #a47a1e;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+  border: 5px solid #a47a1e;
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
   color: #ffec94;
 }
 
@@ -112,7 +120,7 @@ header h1 {
 }
 
 .bloco-unido .secao:last-child {
-  border-bottom: none; /* Remove a linha inferior da última seção para estética e evitar linha "sobrando" no final */
+  border-bottom: none;
 }
 
 .comentarios {
@@ -121,8 +129,8 @@ header h1 {
   background-color: rgb(70, 17, 19);
   border-radius: 10px;
   max-width: 900px;
-  border: 4px solid #a47a1e;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+  border: 5px solid #a47a1e;
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
   color: #ffec94;
 }
 
@@ -132,7 +140,7 @@ header h1 {
 
 .usuario {
   font-weight: bold;
-  color: white;
+  color: #ffffff;
 }
 
 .estrelas {
@@ -171,7 +179,6 @@ footer {
   color: #a47a1e;
   margin-top: 20px;
   text-transform: lowercase;
+  width: 100%;
 }
-
-
 
