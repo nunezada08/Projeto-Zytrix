@@ -141,8 +141,11 @@ main {
   border: rgb(0, 51, 102) 4px solid;
   background-color: white;
 }
-
-.imagem {
+.perfume img {
   height: 90px;
-  margin-right: 20px;
+  transition: transform 0.3s ease;
 }
+.perfume :hover img {
+  transform: scale(1.25);
+}
+
