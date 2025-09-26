@@ -12,15 +12,13 @@ header {
   font-family: "Playfair Display", serif;
 }
 
-
-
 #imagem-home {
   display: flex;
   height: 40px;
   transition: all 0.5s ease;
 }
 
-#logo-empresa{
+#logo-empresa {
   display: flex;
   align-items: center;
 }
@@ -37,11 +35,11 @@ header {
   display: flex;
 }
 
-#carrinho{
+#carrinho {
   display: flex;
   align-items: center;
 }
-#carrinho h1{
+#carrinho h1 {
   color: rgb(0, 51, 102);
   display: flex;
   font-size: 20px;
@@ -51,39 +49,36 @@ header {
   text-decoration: none;
 }
 
-#titulo{
+#titulo {
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
   margin-right: 10%;
-
 }
 
-#titulo h1{
+#titulo h1 {
   font-size: 40px;
   color: rgb(0, 51, 102);
-  background-clip: text;;
+  background-clip: text;
   margin: 0 auto;
 }
 
-
 body {
-   min-height: 100vh;
-  background:  rgb(191,207 ,219 );
+  min-height: 100vh;
+  background: rgb(191, 207, 219);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-main{
+main {
   flex: 1;
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 #section-align {
@@ -94,7 +89,7 @@ main{
   margin-top: 50px;
 }
 
-#produtos{
+#produtos {
   justify-content: center;
   display: flex;
   align-items: center;
@@ -105,21 +100,49 @@ main{
   gap: 20px;
 }
 
-.perfume{
+.perfume {
+  display: flex;
   padding: 30px;
   border-radius: 10px;
   width: 110%;
   background-color: rgb(255, 255, 255);
-  border:  rgb(0, 51, 102) 4px solid;
+  border: rgb(0, 51, 102) 4px solid;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.perfume p {
+  color: rgb(0, 51, 102);
+  font-size: 18px;
 }
 
-#total{
+.botao-mais {
+  display: flex;
+  background-color: rgb(0, 51, 102);
+  height: 35px;
+  width: 35px;
+  justify-content: center;
+  align-items: center;
+}
+.perfume :hover{
+  transition: all 0.5s;
+  transform: scale(1.05)
+}
+
+.botao-mais p {
+  color: white;
+}
+
+#total {
   padding: 200px;
   border-radius: 10px;
-  width: 10%;
-  border:  rgb(0, 51, 102) 4px solid;
+  width: 450px;
+  border: rgb(0, 51, 102) 4px solid;
+  background-color: white;
 }
 
-.imagem{
+.imagem {
   height: 90px;
+  margin-right: 20px;
 }
