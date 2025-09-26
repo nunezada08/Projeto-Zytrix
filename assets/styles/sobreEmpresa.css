@@ -1,3 +1,14 @@
+/* Paleta de cores (fundo = rgb(191,207,219), branco, cinza claro, grafite e efeitos em azul) */
+:root{
+  --fundo: rgb(191,207,219);
+  --branco: rgb(255,255,255);
+  --cinza-claro: rgb(211,211,211); /* D3D3D3 */
+  --grafite: rgb(75,75,75);        /* tom grafite */
+  --azul-claro: rgb(207,229,244);  /* efeitos suaves azuis */
+  --azul: rgb(66,121,171);         /* acento azul mais escuro */
+  --sombra: rgba(47,47,47,0.12);
+}
+
 /* Reset e tipografia do css */
 * {
   box-sizing: border-box;
@@ -9,16 +20,16 @@ body {
   font-family: "Libre Baskerville", Georgia, serif;
   padding-bottom: 0;
   font-size: 18px;
-  background-color: rgb(122, 31, 36);
+  background-color: var(--fundo);
   min-height: 100vh;
 }
 
-/* Container principal */
+/* Container principal: sem fundo cinza — mostra o fundo azul da página */
 main {
   max-width: 1100px;
   margin: 30px auto;
   padding: 20px;
-  background-color: #701719;
+  background-color: transparent;
   border-radius: 20px;
 }
 
@@ -29,8 +40,8 @@ main {
   align-items: center;
   gap: 20px;
   padding: 20px 30px;
-  background: rgb(0, 0, 0);
-  border-bottom: 3px solid rgba(221, 21, 34, 0.2);
+  background: var(--grafite);
+  border-bottom: 3px solid rgba(255,255,255,0.06);
   font-weight: 700;
   font-family: "Playfair Display", serif;
   border-radius: 15px 15px 0 0;
@@ -38,27 +49,11 @@ main {
 .brand h1 {
   font-family: "Playfair Display", serif;
   font-size: 1.8rem;
-  background: linear-gradient(
-    180deg,
-  #a47a1e 0%,
-  #ffec94 50%,
-  #ffffff 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--branco);
 }
 .brand .tag {
   font-size: 1rem;
-  background: linear-gradient(
-    180deg,
-  #a47a1e 0%,
-  #ffec94 50%,
-  #ffffff 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--cinza-claro);
 }
 
 /* Navegação */
@@ -73,9 +68,8 @@ main {
   font-weight: 700;
   background: linear-gradient(
     180deg,
-  #a47a1e 0%,
-  #ffec94 50%,
-  #ffffff 100%
+    var(--azul-claro) 0%,
+    var(--branco) 100%
   );
   padding: 10px 14px;
   border-radius: 8px;
@@ -83,35 +77,36 @@ main {
   font-size: 1rem;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px var(--sombra);
+  color: var(--grafite);
 }
 .site-nav a:hover {
   background: linear-gradient(
     180deg,
-  #ffec94 0%,
-  #a47a1e 50%,
-  #ffffff 100%
+    var(--branco) 0%,
+    var(--azul-claro) 100%
   );
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
 }
 
-/* Hero */
+/* HERO (AZUL) */
 .hero {
   border-radius: 15px;
   padding: 60px 40px;
-  background: linear-gradient(135deg, #f4efe6 0%, #eaf7ff 100%);
-  border: 2px solid #110806;
+  background: linear-gradient(135deg, var(--azul-claro) 0%, var(--fundo) 100%);
+  border: 2px solid var(--grafite);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
   margin-bottom: 40px;
   transition: all 0.3s ease;
+  box-shadow: 0 8px 20px var(--sombra);
 }
 .hero:hover {
-  background: linear-gradient(135deg, #eaf7ff 0%, #f4efe6 100%);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, var(--fundo) 0%, var(--azul-claro) 100%);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.14);
   transform: translateY(-5px);
 }
 .hero-inner {
@@ -120,90 +115,91 @@ main {
 .hero h2 {
   font-family: "Playfair Display", serif;
   font-size: 3.2rem;
-  color: #000000;
+  color: var(--grafite);
   margin-bottom: 20px;
   font-weight: 700;
 }
 .lead {
   font-size: 1.25rem;
-  color: #4d0c14;
+  color: rgba(75,75,75,0.9);
   font-weight: 600;
   font-family: "Libre Baskerville", serif;
   line-height: 1.6;
 }
 
-/* Imagem do perfume */
+/* Imagem do perfume (mantém estilo com acento azul) */
 .bottle {
   width: 180px;
   height: 250px;
   border-radius: 20px;
   flex-shrink: 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 0 2px #a47a1e, 0 0 0 4px #ffec94;
+  box-shadow: 0 6px 18px rgba(66,121,171,0.10), 0 0 0 2px rgba(66,121,171,0.12), 0 0 0 4px rgba(255,255,255,0.6);
   transition: box-shadow 0.3s ease;
 }
 .bottle:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 0 2px #a47a1e, 0 0 0 4px #ffec94;
+  box-shadow: 0 10px 24px rgba(66,121,171,0.14), 0 0 0 2px rgba(66,121,171,0.14), 0 0 0 4px rgba(255,255,255,0.7);
 }
 .bottle img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
   object-fit: cover;
-  border: 2px solid #110806;
+  border: 2px solid var(--grafite);
   transition: transform 0.3s ease;
 }
 .bottle img:hover {
   transform: scale(1.05);
 }
 
-/* About e etc */
+/* ABOUT (BRANCO) */
 .about {
   margin-top: 40px;
   padding: 40px;
   border-radius: 20px;
-  background: #ffffff;
-  border: 2px solid #110806;
+  background: var(--branco);
+  border: 2px solid var(--grafite);
   font-family: "Libre Baskerville", serif;
   font-size: 1.15rem;
-  color: #4a1a1f;
+  color: var(--grafite);
   line-height: 1.7;
   transition: all 0.3s ease;
+  box-shadow: 0 8px 20px var(--sombra);
 }
 .about:hover {
-  background: linear-gradient(135deg, #f9f6f6 0%, #e8f4ff 100%);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, rgba(207,229,244,0.6) 0%, rgba(211,211,211,0.15) 100%);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
   transform: translateY(-5px);
 }
 .about h3 {
   font-family: "Playfair Display", serif;
   font-size: 1.8rem;
-  color: #000000;
+  color: var(--grafite);
   margin-bottom: 20px;
   font-weight: 700;
   letter-spacing: 1.5px;
 }
 
-/* History */
+/* HISTORY (AZUL) */
 .history {
   margin-top: 40px;
   padding: 40px;
   border-radius: 20px;
-  background: linear-gradient(135deg, #f4efe6 0%, #eaf7ff 100%);
-  border: 2px solid #110806;
-  color: #4e140d;
+  background: linear-gradient(135deg, var(--azul-claro) 0%, var(--fundo) 100%);
+  border: 2px solid var(--grafite);
+  color: var(--grafite);
   font-family: "Libre Baskerville", serif;
   font-size: 1.1rem;
   line-height: 1.7;
   transition: all 0.3s ease;
 }
 .history:hover {
-  background: linear-gradient(135deg, #e8f4ff 0%, #f4efe6 100%);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, var(--fundo) 0%, var(--azul-claro) 100%);
+  box-shadow: 0 8px 16px var(--sombra);
   transform: translateY(-5px);
 }
 .history h3 {
   font-family: "Playfair Display", serif;
-  color: #000000;
+  color: var(--grafite);
   margin-bottom: 20px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -211,37 +207,37 @@ main {
 .history p {
   margin: 16px 0;
   font-size: 1.1rem;
-  color: #3b2d2c;
+  color: rgba(75,75,75,0.95);
 }
 
-/* Contact */
+/* CONTACT (BRANCO) */
 .contact {
   margin-top: 40px;
   padding: 30px;
   border-radius: 20px;
-  background: linear-gradient(135deg, #f4efe6 0%, #eaf7ff 100%);
-  border: 2px solid #110806;
+  background: var(--branco);
+  border: 2px solid var(--grafite);
   font-family: "Libre Baskerville", serif;
   font-size: 1.15rem;
-  color: #000000;
+  color: var(--grafite);
   line-height: 1.7;
   transition: all 0.3s ease;
 }
 .contact:hover {
-  background: linear-gradient(135deg, #eaf7ff 0%, #f4efe6 100%);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, rgba(207,229,244,0.6) 0%, rgba(211,211,211,0.12) 100%);
+  box-shadow: 0 8px 16px var(--sombra);
   transform: translateY(-5px);
 }
 .contact a {
-  color: #000000;
+  color: var(--grafite);
   font-weight: 700;
   text-decoration: none;
-  border-bottom: 1px solid #a47a1e;
+  border-bottom: 1px solid var(--cinza-claro);
 }
 
 /* Footer */
 .site-footer {
-  background-color: #000000;
+  background-color: var(--grafite);
   padding: 30px;
   text-align: center;
   margin-top: 60px;
@@ -250,7 +246,7 @@ main {
 }
 
 .site-footer p {
-  background: linear-gradient(180deg, #a47a1e 0%, #ffec94 50%, #ffffff 100%);
+  background: linear-gradient(180deg, var(--azul) 0%, var(--branco) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -264,7 +260,7 @@ main {
 }
 
 .site-footer .social a {
-  color: #ffec94;
+  color: var(--azul);
   text-decoration: none;
   margin: 0 20px;
   font-weight: 600;
@@ -273,8 +269,8 @@ main {
   transition: all 0.3s ease;
 }
 .site-footer .social a:hover {
-  background-color: #a47a1e;
-  color: #ffffff;
+  background-color: var(--cinza-claro);
+  color: var(--branco);
   transform: translateY(-2px);
 }
 
