@@ -7,39 +7,33 @@
 
 body {
   font-family: "Libre Baskerville", Georgia, serif;
-  line-height: 1.6;
   padding-bottom: 0;
   font-size: 18px;
-  scroll-behavior: smooth;
-background-color: rgb(122, 31, 36);
+  background-color: rgb(122, 31, 36);
+  min-height: 100vh;
 }
 
 /* Container principal */
 main {
-  max-width: 980px;
-  margin: 36px auto;
-  padding: 0 20px;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
   background-color: #701719;
+  border-radius: 20px;
 }
 
 /* Header */
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 18px 28px;
+  padding: 20px 30px;
   background: rgb(0, 0, 0);
-  backdrop-filter: blur(8px);
-  border-bottom: 2px solid rgba(221, 21, 34, 0.12);
-  box-shadow: 0 6px 18px rgba(231, 37, 37, 0.12);
+  border-bottom: 3px solid rgba(221, 21, 34, 0.2);
   font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
   font-family: "Playfair Display", serif;
+  border-radius: 15px 15px 0 0;
 }
 .brand h1 {
   font-family: "Playfair Display", serif;
@@ -50,10 +44,9 @@ main {
   #ffec94 50%,
   #ffffff 100%
   );
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: 2px;
+  background-clip: text;
 }
 .brand .tag {
   font-size: 1rem;
@@ -63,20 +56,18 @@ main {
   #ffec94 50%,
   #ffffff 100%
   );
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0.9;
-  font-style: italic;
-  letter-spacing: 1px;
+  background-clip: text;
 }
 
-/* Navegação tudo ok */
+/* Navegação */
 .site-nav ul {
-  list-style: none;
   display: flex;
   gap: 18px;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .site-nav a {
   font-weight: 700;
@@ -86,225 +77,186 @@ main {
   #ffec94 50%,
   #ffffff 100%
   );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
-  letter-spacing: 1.6px;
-  text-decoration: none;
   padding: 10px 14px;
   border-radius: 8px;
-  transition: all 0.3s ease;
   font-family: "Playfair Display", serif;
   font-size: 1rem;
-  box-shadow: 0 0 0 rgba(83, 72, 6, 0);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav a:hover {
   background: linear-gradient(
     180deg,
-  #a47a1e 0%,
-  #ffec94 50%,
+  #ffec94 0%,
+  #a47a1e 50%,
   #ffffff 100%
   );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(92, 90, 7, 0.3);
-  outline: none;
-  font-size: 20px;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Hero */
 .hero {
-  position: relative;
-
-  border-radius: 14px;
-  padding: 48px 30px;
-  background: linear-gradient(
-    135deg,
-  #f4efe6 0%, #eaf7ff 100%
-  );
-  box-shadow: 0 14px 40px rgba(238, 231, 232, 0.25);
-    border: 1px solid #110806;
-  overflow: hidden;
+  border-radius: 15px;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #f4efe6 0%, #eaf7ff 100%);
+  border: 2px solid #110806;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 40px;
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+.hero:hover {
+  background: linear-gradient(135deg, #eaf7ff 0%, #f4efe6 100%);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 .hero-inner {
   max-width: 620px;
 }
 .hero h2 {
   font-family: "Playfair Display", serif;
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   color: #000000;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   font-weight: 700;
-  letter-spacing: 1.5px;
 }
 .lead {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   color: #4d0c14;
   font-weight: 600;
-  opacity: 0.95;
-  line-height: 1.5;
   font-family: "Libre Baskerville", serif;
+  line-height: 1.6;
 }
 
-/* Funciona? não (imagem do perfume) */
+/* Imagem do perfume */
 .bottle {
-  width: 140px;
-  height: 200px;
+  width: 180px;
+  height: 250px;
   border-radius: 20px;
-  background-size: contain;
-
-  transform: rotate(-6deg);
-  transition: transform 0.3s ease;
-  cursor: pointer;
+  flex-shrink: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 0 2px #a47a1e, 0 0 0 4px #ffec94;
+  transition: box-shadow 0.3s ease;
 }
 .bottle:hover {
-  transform: rotate(0deg) scale(1.05);
-  box-shadow: 0 20px 40px rgba(66, 7, 11, 0.5);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 0 2px #a47a1e, 0 0 0 4px #ffec94;
+}
+.bottle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 2px solid #110806;
+  transition: transform 0.3s ease;
+}
+.bottle img:hover {
+  transform: scale(1.05);
 }
 
 /* About e etc */
 .about {
-  margin-top: 28px;
-  padding: 28px;
-  border-radius: 16px;
-  background: linear-gradient(
-    135deg,
-  #f4efe6 0%, #eaf7ff 100%
-  );
-  border: 1px solid #110806;
-  box-shadow: 0 10px 30px rgba(107, 15, 27, 0.12);
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 2px solid #110806;
   font-family: "Libre Baskerville", serif;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: #4a1a1f;
+  line-height: 1.7;
+  transition: all 0.3s ease;
+}
+.about:hover {
+  background: linear-gradient(135deg, #f9f6f6 0%, #e8f4ff 100%);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 .about h3 {
   font-family: "Playfair Display", serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #000000;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   font-weight: 700;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.5px;
 }
 
-/* — azure meio creme */
+/* History */
 .history {
-  margin-top: 28px;
-  padding: 30px;
-  border-radius: 16px;
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 20px;
   background: linear-gradient(135deg, #f4efe6 0%, #eaf7ff 100%);
-  border: 1px solid #110806;
-  box-shadow: 0 14px 40px rgba(216, 10, 10, 0.08);
+  border: 2px solid #110806;
   color: #4e140d;
   font-family: "Libre Baskerville", serif;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   line-height: 1.7;
+  transition: all 0.3s ease;
+}
+.history:hover {
+  background: linear-gradient(135deg, #e8f4ff 0%, #f4efe6 100%);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 .history h3 {
   font-family: "Playfair Display", serif;
   color: #000000;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   font-weight: 700;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.5px;
 }
 .history p {
-  margin: 14px 0;
-  font-size: 1.05rem;
-  line-height: 1.7;
+  margin: 16px 0;
+  font-size: 1.1rem;
   color: #3b2d2c;
 }
 
-/* Contatos ficticios */
+/* Contact */
 .contact {
-  margin-top: 24px;
-  padding:  22px;
-  border-radius: 14px;
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 20px;
   background: linear-gradient(135deg, #f4efe6 0%, #eaf7ff 100%);
-  box-shadow: 0 14px 40px rgba(216, 10, 10, 0.08);
-  border: 1px solid #110806;
+  border: 2px solid #110806;
   font-family: "Libre Baskerville", serif;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: #000000;
+  line-height: 1.7;
+  transition: all 0.3s ease;
+}
+.contact:hover {
+  background: linear-gradient(135deg, #eaf7ff 0%, #f4efe6 100%);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 .contact a {
   color: #000000;
   font-weight: 700;
-  text-decoration: underline;
-  transition: color 0.3s ease;
-}
-.contact a:hover,
-.contact a:focus {
-  color: #000000;
-  outline: none;
-}
-
-
-/* Efeitos maneiros */
-.history p:hover {
-  box-shadow: 0 8px 20px #000000;
-  border-radius: 8px;
-  padding: 8px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-/* Efeitos de transição */
-body {
-  transition: background 0.5s ease;
-}
-
-/* Sombras tops */
-h2,
-h3 {
-  transition: all 0.3s ease;
-}
-
-
-h2:hover,
-h3:hover {
-  background: linear-gradient(
-    180deg,
-  #a47a1e 0%,
-  #796b30 50%,
-  #000000 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transform: scale(1.05);
-  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px solid #a47a1e;
 }
 
 /* Footer */
 .site-footer {
   background-color: #000000;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 60px;
   font-family: "Libre Baskerville", serif;
+  border-radius: 0 0 20px 20px;
 }
 
 .site-footer p {
-  background: linear-gradient(
-    180deg,
-    #a47a1e 0%,
-    #ffec94 50%,
-    #ffffff 100%
-  );
-  background-clip: text;
+  background: linear-gradient(180deg, #a47a1e 0%, #ffec94 50%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: 700;
-  font-size: 1rem;
-  margin: 10px 0;
+  font-size: 1.1rem;
+  margin: 15px 0;
 }
 
 .site-footer .social {
@@ -314,11 +266,42 @@ h3:hover {
 .site-footer .social a {
   color: #ffec94;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 20px;
   font-weight: 600;
-  transition: color 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.site-footer .social a:hover {
+  background-color: #a47a1e;
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 
-.site-footer .social a:hover {
-  color: #ffffff;
+/* Responsividade */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 20px;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+  .bottle {
+    width: 150px;
+    height: 200px;
+  }
+  main {
+    margin: 10px;
+    padding: 15px;
+  }
+  .about, .history, .contact {
+    padding: 25px 20px;
+  }
 }
