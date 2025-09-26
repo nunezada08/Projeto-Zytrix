@@ -12,11 +12,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* fundo solicitado */
-    background-color: rgb(191,207,219); /* #BFCFDB */
+    background: linear-gradient(180deg, #7A3740 0%, #984550 29.81%, #E06576 100%);
 }
 
-/* Card principal */
 .card {
     position: relative;
     width: 400px;
@@ -24,13 +22,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out; 
     transition-delay: 0.1s;
     border-radius: 20px;
-    /* fundo branco suave com sombra graphite */
-    background: rgb(255,255,255); /* branco */
-    box-shadow: 0 12px 30px rgba(47,47,47,0.15); /* cinza grafite sombra */
-    overflow: hidden;
+    
 }
 
 .card:hover {
@@ -38,7 +33,6 @@ body {
     transition-delay: 0;
 }
 
-/* Círculo/área decorativa */
 .card .circle {
     position: absolute;
     top: 0;
@@ -49,6 +43,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .card .circle::before {
@@ -59,22 +54,20 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    /* bege claro no centro */
-    background: rgb(245,245,220); /* bege (beige) */
-    border: 4px solid rgb(47,47,47); /* cinza grafite */
+    background: #7A3740;
+    border: 4px solid #000;
     transition: all 0.5s ease-in-out;
-    filter: drop-shadow(0 6px 18px rgba(47,47,47,0.15));
+    filter: drop-shadow(0 0 10px #000) drop-shadow(0 0 60px #d9d9d9);
 }
 
 .card:hover .circle::before {
     border-radius: 20px;
-    background: rgb(211,211,211); /* cinza claro ao hover */
+    background: #7A3740;
     width: 100%;
     height: 100%;
     border: none;
 }
 
-/* Logo dentro da circle (esconde no hover) */
 .card .circle .logo {
     position: relative;
     width: 200px;
@@ -84,41 +77,35 @@ body {
 
 .card:hover .circle .logo {
     transform: scale(0);
-    transition-delay: 0s;
+    transition-delay: 0s; 
 }
 
-/* Imagem do produto */
 .product_img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0) rotate(315deg);
     height: 330px;
-    transition: 0.3s ease-in-out;
-    transition-delay: 0s;
+    transition: 0.3s ease-in-out; 
+    transition-delay: 0s; 
     visibility: hidden;
-    /* opcional: borda branca para destacar sobre o fundo claro */
-    box-shadow: 0 8px 24px rgba(47,47,47,0.12);
-    border-radius: 12px;
 }
 
 .card:hover .product_img {
     visibility: visible;
     left: 80%;
     transform: translate(-50%, -50%) scale(1) rotate(15deg);
-    transition-delay: 0.5s;
+    transition-delay: 0.5s; 
 }
 
-/* Conteúdo textual do card */
 .card .content {
     position: absolute;
     width: 50%;
     left: 20%;
     padding: 20px;
     opacity: 0;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out; 
     visibility: hidden;
-    color: rgb(47,47,47); /* texto cinza grafite */
 }
 
 .card:hover .content {
@@ -128,53 +115,34 @@ body {
     left: 20px;
 }
 
-/* Título com mistura de cores (bege -> grafite -> branco) */
 .card .content h2 {
     background: linear-gradient(
-        180deg,
-        rgb(245,245,220) 0%,   /* bege */
-        rgb(47,47,47) 60%,     /* cinza grafite */
-        rgb(255,255,255) 100%  /* branco */
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    180deg,
+  #a47a1e 0%,
+  #ffec94 50%,
+  #ffffff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     text-transform: uppercase;
-    font-size: 2.2em;
+    font-size: 2.5em;
     line-height: 1em;
 }
 
-/* Parágrafo em cinza grafite para legibilidade */
 .card .content p {
-    color: rgb(47,47,47); /* cinza grafite */
-    margin-top: 8px;
+    color: #000;
+
 }
 
-/* Botão / link: fundo grafite com texto branco; hover inverte para bege */
 .card .content a {
     position: relative;
-    color: rgb(255,255,255); /* branco */
-    background: rgb(47,47,47); /* cinza grafite */
+    color: #fff;
+    background: #d52b1e;
     padding: 10px 20px;
     border-radius: 10px;
     display: inline-block;
     text-decoration: none;
     font-weight: 600;
     margin-top: 10px;
-    transition: background 0.2s ease, color 0.2s ease;
-}
-
-.card .content a:hover {
-    background: rgb(245,245,220); /* bege */
-    color: rgb(47,47,47); /* grafite */
-    border: 1px solid rgba(47,47,47,0.12);
-}
-
-/* Ajustes responsivos simples */
-@media (max-width: 780px) {
-    .card { width: 320px; height: 360px; }
-    .card:hover { width: 320px; } /* evitar expansão em mobile */
-    .product_img { height: 240px; }
-    .card .content { width: 60%; left: 10%; }
-    .card .content h2 { font-size: 1.6em; }
 }
