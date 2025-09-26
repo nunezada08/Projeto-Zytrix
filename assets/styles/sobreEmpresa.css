@@ -9,7 +9,7 @@ body {
   font-family: "Libre Baskerville", Georgia, serif;
   padding-bottom: 0;
   font-size: 18px;
-  background-color: rgb(122, 31, 36);
+  background-color: rgb(191,207,219);
   min-height: 100vh;
 }
 
@@ -18,7 +18,7 @@ main {
   max-width: 1100px;
   margin: 30px auto;
   padding: 20px;
-  background-color: #701719;
+  background-color: #D3D3D3;
   border-radius: 20px;
 }
 
@@ -29,8 +29,8 @@ main {
   align-items: center;
   gap: 20px;
   padding: 20px 30px;
-  background: rgb(0, 0, 0);
-  border-bottom: 3px solid rgba(221, 21, 34, 0.2);
+  background: #4B4B4B;
+  border-bottom: 3px solid #D3D3D3;
   font-weight: 700;
   font-family: "Playfair Display", serif;
   border-radius: 15px 15px 0 0;
@@ -38,27 +38,11 @@ main {
 .brand h1 {
   font-family: "Playfair Display", serif;
   font-size: 1.8rem;
-  background: linear-gradient(
-    180deg,
-  #a47a1e 0%,
-  #ffec94 50%,
-  #ffffff 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #FFFFFF;
 }
 .brand .tag {
   font-size: 1rem;
-  background: linear-gradient(
-    180deg,
-  #a47a1e 0%,
-  #ffec94 50%,
-  #ffffff 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #FFFFFF;
 }
 
 /* Navegação */
@@ -73,9 +57,8 @@ main {
   font-weight: 700;
   background: linear-gradient(
     180deg,
-  #a47a1e 0%,
-  #ffec94 50%,
-  #ffffff 100%
+  #F5F5DC 0%,
+  #FFFFFF 100%
   );
   padding: 10px 14px;
   border-radius: 8px;
@@ -88,9 +71,8 @@ main {
 .site-nav a:hover {
   background: linear-gradient(
     180deg,
-  #ffec94 0%,
-  #a47a1e 50%,
-  #ffffff 100%
+  #FFFFFF 0%,
+  #F5F5DC 100%
   );
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -100,8 +82,8 @@ main {
 .hero {
   border-radius: 15px;
   padding: 60px 40px;
-  background: linear-gradient(135deg, #f4efe6 0%, #eaf7ff 100%);
-  border: 2px solid #110806;
+  background: linear-gradient(135deg, #F5F5DC 0%, #D3D3D3 100%);
+  border: 2px solid #4B4B4B;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -110,7 +92,7 @@ main {
   transition: all 0.3s ease;
 }
 .hero:hover {
-  background: linear-gradient(135deg, #eaf7ff 0%, #f4efe6 100%);
+  background: linear-gradient(135deg, #D3D3D3 0%, #F5F5DC 100%);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
 }
@@ -162,15 +144,15 @@ main {
   padding: 40px;
   border-radius: 20px;
   background: #ffffff;
-  border: 2px solid #110806;
+  border: 2px solid #4B4B4B;
   font-family: "Libre Baskerville", serif;
   font-size: 1.15rem;
-  color: #4a1a1f;
+  color: #4B4B4B;
   line-height: 1.7;
   transition: all 0.3s ease;
 }
 .about:hover {
-  background: linear-gradient(135deg, #f9f6f6 0%, #e8f4ff 100%);
+  background: linear-gradient(135deg, #F5F5DC 0%, #D3D3D3 100%);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
 }
@@ -188,16 +170,16 @@ main {
   margin-top: 40px;
   padding: 40px;
   border-radius: 20px;
-  background: linear-gradient(135deg, #f4efe6 0%, #eaf7ff 100%);
-  border: 2px solid #110806;
-  color: #4e140d;
+  background: linear-gradient(135deg, #F5F5DC 0%, #D3D3D3 100%);
+  border: 2px solid #4B4B4B;
+  color: #4B4B4B;
   font-family: "Libre Baskerville", serif;
   font-size: 1.1rem;
   line-height: 1.7;
   transition: all 0.3s ease;
 }
 .history:hover {
-  background: linear-gradient(135deg, #e8f4ff 0%, #f4efe6 100%);
+  background: linear-gradient(135deg, #D3D3D3 0%, #F5F5DC 100%);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
 }
@@ -219,24 +201,24 @@ main {
   margin-top: 40px;
   padding: 30px;
   border-radius: 20px;
-  background: linear-gradient(135deg, #f4efe6 0%, #eaf7ff 100%);
-  border: 2px solid #110806;
+  background: linear-gradient(135deg, #F5F5DC 0%, #D3D3D3 100%);
+  border: 2px solid #4B4B4B;
   font-family: "Libre Baskerville", serif;
   font-size: 1.15rem;
-  color: #000000;
+  color: #4B4B4B;
   line-height: 1.7;
   transition: all 0.3s ease;
 }
 .contact:hover {
-  background: linear-gradient(135deg, #eaf7ff 0%, #f4efe6 100%);
+  background: linear-gradient(135deg, #D3D3D3 0%, #F5F5DC 100%);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
 }
 .contact a {
-  color: #000000;
+  color: #4B4B4B;
   font-weight: 700;
   text-decoration: none;
-  border-bottom: 1px solid #a47a1e;
+  border-bottom: 1px solid #D3D3D3;
 }
 
 /* Footer */
@@ -250,7 +232,7 @@ main {
 }
 
 .site-footer p {
-  background: linear-gradient(180deg, #a47a1e 0%, #ffec94 50%, #ffffff 100%);
+  background: linear-gradient(180deg, #F5F5DC 0%, #FFFFFF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -264,7 +246,7 @@ main {
 }
 
 .site-footer .social a {
-  color: #ffec94;
+  color: #F5F5DC;
   text-decoration: none;
   margin: 0 20px;
   font-weight: 600;
@@ -273,8 +255,8 @@ main {
   transition: all 0.3s ease;
 }
 .site-footer .social a:hover {
-  background-color: #a47a1e;
-  color: #ffffff;
+  background-color: #D3D3D3;
+  color: #FFFFFF;
   transform: translateY(-2px);
 }
 
