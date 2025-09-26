@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(180deg, #7A3740 0%, #843C45 35%, #E06576 100%);
+    background-color: rgb(191,207,219);
     overflow: hidden;
 }
 
@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     width: 83%;
     max-width: 1160px;
     height: 430px;
@@ -41,7 +41,6 @@ body {
 
 #login-container {
 
-    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,13 +56,13 @@ body {
     flex-direction: column;
     margin-left: 3%;
     margin-bottom: 17%;
-    color: white;
+    color: rgb(0, 0, 0);
     width: 42%
 }
 
 #text-container img {
 
-    margin-top: 10px;
+    margin-top: 25px;
     margin-left: -20px;
 }
 
@@ -76,6 +75,7 @@ body {
 
     padding-bottom: 1.3rem;
     font-size: 42px;
+    color: rgb(0,51,102);
 }
 
 .interacao-usuario {
@@ -84,7 +84,7 @@ body {
     justify-content: center;
     align-items: center;
     justify-content: start;
-    background-color: white;
+    background-color: rgb(211,211,211);
     color: black;
     width: 95%;
     height: 50px;
@@ -103,19 +103,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgb(211,211,211);
     border-radius: 30px;
     width: 30%;
     height: 40px;
-    transition: all 0.6s ease;
+    transition: all 0.4s ease;
 }
 
 #login:hover {
 
-    background: linear-gradient(180deg, #7A3740 0%, #843C45 35%, #E06576 100%);
+    background-color: rgb(0,51,102);
     color: white;
     cursor: pointer;
-    transition: all 0.6s ease;
+    transition: all 0.5s ease;
 }
 
 .interacao-usuario input {
@@ -132,7 +132,7 @@ body {
 #registrar {
 
     margin-top: -30px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1rem;
     text-align: center;
 }
@@ -140,16 +140,13 @@ body {
 #registrar a {
 
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
 
 #registrar a:hover {
     transition: all 0.5s ease;
-    background: linear-gradient(180deg,#f80606 0%,#573939 44.71%, #4d4242 70.67%, #756565 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(0,51,102);
     cursor: pointer;
 }
 
