@@ -1,3 +1,13 @@
+/* Paleta centralizada */
+:root{
+  --fundo: rgb(191,207,219);
+  --branco: rgb(255,255,255);
+  --bege: rgb(245,245,220);
+  --cinza-claro: rgb(211,211,211);
+  --grafite: rgb(47,47,47);
+  --sombra: rgba(47,47,47,0.12);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -12,7 +22,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(180deg, #7A3740 0%, #984550 29.81%, #E06576 100%);
+    background-color: var(--fundo);
 }
 
 .card {
@@ -25,7 +35,8 @@ body {
     transition: width 0.5s ease-in-out, height 0.5s ease-in-out; 
     transition-delay: 0.1s;
     border-radius: 20px;
-    
+    background: linear-gradient(180deg, var(--branco) 0%, var(--cinza-claro) 100%);
+    box-shadow: 0 12px 30px var(--sombra);
 }
 
 .card:hover {
@@ -43,7 +54,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .card .circle::before {
@@ -54,15 +64,15 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #7A3740;
-    border: 4px solid #000;
+    background: var(--bege);
+    border: 4px solid var(--grafite);
     transition: all 0.5s ease-in-out;
-    filter: drop-shadow(0 0 10px #000) drop-shadow(0 0 60px #d9d9d9);
+    filter: drop-shadow(0 6px 18px var(--sombra));
 }
 
 .card:hover .circle::before {
     border-radius: 20px;
-    background: #7A3740;
+    background: var(--cinza-claro);
     width: 100%;
     height: 100%;
     border: none;
@@ -89,6 +99,8 @@ body {
     transition: 0.3s ease-in-out; 
     transition-delay: 0s; 
     visibility: hidden;
+    box-shadow: 0 8px 24px var(--sombra);
+    border-radius: 12px;
 }
 
 .card:hover .product_img {
@@ -106,6 +118,7 @@ body {
     opacity: 0;
     transition: 0.5s ease-in-out; 
     visibility: hidden;
+    color: var(--grafite);
 }
 
 .card:hover .content {
@@ -117,32 +130,48 @@ body {
 
 .card .content h2 {
     background: linear-gradient(
-    180deg,
-  #a47a1e 0%,
-  #ffec94 50%,
-  #ffffff 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+      180deg,
+      var(--bege) 0%,
+      var(--grafite) 60%,
+      var(--branco) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     font-size: 2.5em;
     line-height: 1em;
 }
 
 .card .content p {
-    color: #000;
-
+    color: rgba(47,47,47,0.95);
 }
 
 .card .content a {
     position: relative;
-    color: #fff;
-    background: #d52b1e;
+    color: var(--branco);
+    background: var(--grafite);
     padding: 10px 20px;
     border-radius: 10px;
     display: inline-block;
     text-decoration: none;
     font-weight: 600;
     margin-top: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: background 0.18s ease, color 0.18s ease, transform 0.12s ease;
+}
+
+.card .content a:hover {
+    background: linear-gradient(180deg, var(--cinza-claro), var(--bege));
+    color: var(--grafite);
+    transform: translateY(-3px);
+}
+
+/* responsividade */
+@media (max-width: 780px) {
+    .card { width: 320px; height: 360px; }
+    .card:hover { width: 320px; } 
+    .product_img { height: 240px; }
+    .card .content { width: 60%; left: 10%; }
+    .card .content h2 { font-size: 1.6em; }
 }
