@@ -1,13 +1,3 @@
-/* Paleta centralizada */
-:root{
-  --fundo: rgb(191,207,219);
-  --branco: rgb(255,255,255);
-  --bege: rgb(245,245,220);
-  --cinza-claro: rgb(211,211,211);
-  --grafite: rgb(47,47,47);
-  --sombra: rgba(47,47,47,0.14);
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -22,19 +12,24 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: var(--fundo);
+    /* fundo solicitado */
+    background-color: rgb(191,207,219); /* #BFCFDB */
 }
 
+/* Card principal */
 .card {
     position: relative;
     width: 400px;
-    height: 410px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: width 0.5s ease-in-out, height 0.5s ease-in-out; 
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
     transition-delay: 0.1s;
     border-radius: 20px;
+    /* fundo branco suave com sombra graphite */
+    background: rgb(255,255,255); /* branco */
+    box-shadow: 0 12px 30px rgba(47,47,47,0.15); /* cinza grafite sombra */
     overflow: hidden;
 }
 
@@ -43,6 +38,7 @@ body {
     transition-delay: 0;
 }
 
+/* Círculo/área decorativa */
 .card .circle {
     position: absolute;
     top: 0;
@@ -63,20 +59,22 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: var(--bege);
-    border: 4px solid var(--grafite);
+    /* bege claro no centro */
+    background: rgb(245,245,220); /* bege (beige) */
+    border: 4px solid rgb(47,47,47); /* cinza grafite */
     transition: all 0.5s ease-in-out;
-    filter: drop-shadow(0 6px 18px var(--sombra));
+    filter: drop-shadow(0 6px 18px rgba(47,47,47,0.15));
 }
 
 .card:hover .circle::before {
     border-radius: 20px;
-    background: var(--cinza-claro);
+    background: rgb(211,211,211); /* cinza claro ao hover */
     width: 100%;
     height: 100%;
     border: none;
 }
 
+/* Logo dentro da circle (esconde no hover) */
 .card .circle .logo {
     position: relative;
     width: 200px;
@@ -86,19 +84,21 @@ body {
 
 .card:hover .circle .logo {
     transform: scale(0);
-    transition-delay: 0s; 
+    transition-delay: 0s;
 }
 
+/* Imagem do produto */
 .product_img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0) rotate(315deg);
     height: 330px;
-    transition: 0.3s ease-in-out; 
-    transition-delay: 0s; 
+    transition: 0.3s ease-in-out;
+    transition-delay: 0s;
     visibility: hidden;
-    box-shadow: 0 8px 24px var(--sombra);
+    /* opcional: borda branca para destacar sobre o fundo claro */
+    box-shadow: 0 8px 24px rgba(47,47,47,0.12);
     border-radius: 12px;
 }
 
@@ -106,18 +106,19 @@ body {
     visibility: visible;
     left: 80%;
     transform: translate(-50%, -50%) scale(1) rotate(15deg);
-    transition-delay: 0.5s; 
+    transition-delay: 0.5s;
 }
 
+/* Conteúdo textual do card */
 .card .content {
     position: absolute;
     width: 50%;
     left: 20%;
     padding: 20px;
     opacity: 0;
-    transition: 0.5s ease-in-out; 
+    transition: 0.5s ease-in-out;
     visibility: hidden;
-    color: var(--grafite);
+    color: rgb(47,47,47); /* texto cinza grafite */
 }
 
 .card:hover .content {
@@ -127,62 +128,53 @@ body {
     left: 20px;
 }
 
+/* Título com mistura de cores (bege -> grafite -> branco) */
 .card .content h2 {
     background: linear-gradient(
-      180deg,
-      var(--bege) 0%,
-      var(--grafite) 60%,
-      var(--branco) 100%
+        180deg,
+        rgb(245,245,220) 0%,   /* bege */
+        rgb(47,47,47) 60%,     /* cinza grafite */
+        rgb(255,255,255) 100%  /* branco */
     );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 2.2em;
     line-height: 1em;
 }
 
+/* Parágrafo em cinza grafite para legibilidade */
 .card .content p {
-    color: var(--grafite);
-    margin-top: 12px;
+    color: rgb(47,47,47); /* cinza grafite */
+    margin-top: 8px;
 }
 
-/* Botão com estilo formal usando a paleta */
+/* Botão / link: fundo grafite com texto branco; hover inverte para bege */
 .card .content a {
     position: relative;
-    color: var(--branco);
-    background: var(--grafite);
+    color: rgb(255,255,255); /* branco */
+    background: rgb(47,47,47); /* cinza grafite */
     padding: 10px 20px;
     border-radius: 10px;
     display: inline-block;
     text-decoration: none;
     font-weight: 600;
     margin-top: 10px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    transition: background 0.18s ease, color 0.18s ease, transform 0.12s ease;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
 .card .content a:hover {
-    background: linear-gradient(180deg, var(--cinza-claro), var(--bege));
-    color: var(--grafite);
-    transform: translateY(-3px);
-    border: 1px solid rgba(0,0,0,0.04);
+    background: rgb(245,245,220); /* bege */
+    color: rgb(47,47,47); /* grafite */
+    border: 1px solid rgba(47,47,47,0.12);
 }
 
-/* pequenas melhorias visuais */
-.card .content small {
-    display: block;
-    margin-top: 8px;
-    color: rgba(47,47,47,0.6);
-    font-size: 0.9rem;
-}
-
-/* Responsividade */
+/* Ajustes responsivos simples */
 @media (max-width: 780px) {
     .card { width: 320px; height: 360px; }
-    .card:hover { width: 320px; } 
+    .card:hover { width: 320px; } /* evitar expansão em mobile */
     .product_img { height: 240px; }
     .card .content { width: 60%; left: 10%; }
     .card .content h2 { font-size: 1.6em; }
 }
-
