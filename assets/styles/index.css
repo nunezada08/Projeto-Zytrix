@@ -17,14 +17,6 @@ header {
 
 }
 
-header:hover{
-   background-color: rgb(68, 26, 26);
-  display: flex;
-  padding: 2px 25px;
-  justify-content: space-between;
-  text-align: center;
-  transition: 0.7s;
-}
 .slider {
   width: 90%;
   position: relative;
@@ -113,32 +105,31 @@ header:hover{
 }
 #icon-local:hover {
 
-   background-color: #7a3740;
+   background-color: rgb(0, 51, 102);
    border-radius: 50%;
    transition: 0.3s;
 }
 
 #icon-lupa:hover {
-   background-color: #7a3740;
+   background-color: rgb(0, 51, 102);
    border-radius: 50%;
    transition: 0.3s;
 }
 
 #icon-pessoa:hover {
-   background-color: #7a3740;
+   background-color: rgb(0, 51, 102);
    border-radius: 50%;
    transition: 0.3s;
 }
 
 #icon-sacola:hover {
-   background-color: #7a3740;
+   background-color:rgb(0, 51, 102);
    border-radius: 50%;
    transition: 0.3s;
 }
 h1 {
   width: 500px;
   height: 64px;
-
   font-family: "TASA Explorer";
   font-size: 55px;
   font-style: normal;
@@ -149,6 +140,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   justify-content: space-between;
+  left: 80px;
 }
 #marca {
   font-size: 40px;
@@ -167,9 +159,9 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  top: 25px;
-  right: 80px;
- left: 400px;
+ justify-content: center;
+ align-items: center;
+ display: flex;
 }
 .texto-da-marca{
   padding: 40px;
@@ -183,6 +175,7 @@ h1 {
   margin: 29px;
   transition: 0.7s;
   justify-content: space-between;
+  border: rgb(0, 51, 102);;
 }
 .texto-da-marca:hover{
   background-color: #070707;
@@ -213,5 +206,14 @@ h1 {
   padding: 20px 25px;
   justify-content: center;
   color: #000000;
+}
+footer{
+  text-align: center;
+  padding: 15px 0; /* Ajuste o padding para não ter laterais */
+  background-color: rgb(255, 255, 255);
+  color:rgb(9, 10, 10) ;
+  text-transform: lowercase;
+  width: 100%; 
+  border-top: rgb(0, 51, 102) 4px solid;
 }
 
