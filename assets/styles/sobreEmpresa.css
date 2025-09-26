@@ -33,62 +33,73 @@ main {
   border-radius: 20px;
 }
 
-/* Header */
+/* Header (atualizado) */
 .site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 20px 30px;
-  background: var(--grafite);
-  border-bottom: 3px solid rgba(255,255,255,0.06);
-  font-weight: 700;
-  font-family: "Playfair Display", serif;
-  border-radius: 15px 15px 0 0;
+  padding: 16px 24px;
+  background: var(--grafite); /* revertido para grafite */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px var(--sombra);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+/* Marca */
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
 }
 .brand h1 {
   font-family: "Playfair Display", serif;
-  font-size: 1.8rem;
+  font-size: 1.25rem;
   color: var(--branco);
+  line-height: 1;
+  letter-spacing: 0.4px;
 }
 .brand .tag {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--cinza-claro);
+  font-weight: 600;
 }
 
-/* Navegação */
+/* Navegação: sem bullets e organizada (sem alterar cores globais) */
+.site-nav { display: block; }
 .site-nav ul {
+  list-style: none; /* remove os pontos pretos */
+  margin: 0;
+  padding: 0;
   display: flex;
-  gap: 18px;
+  gap: 10px;
   align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
 }
+.site-nav li { list-style: none; }
+
+/* Links limpos e ligados */
 .site-nav a {
-  font-weight: 700;
-  background: linear-gradient(
-    180deg,
-    var(--azul-claro) 0%,
-    var(--branco) 100%
-  );
-  padding: 10px 14px;
+  display: inline-block;
+  padding: 8px 12px;
   border-radius: 8px;
-  font-family: "Playfair Display", serif;
-  font-size: 1rem;
   text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px var(--sombra);
-  color: var(--grafite);
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: var(--branco);
+  background: transparent;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
 }
-.site-nav a:hover {
-  background: linear-gradient(
-    180deg,
-    var(--branco) 0%,
-    var(--azul-claro) 100%
-  );
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+
+/* Hover e foco sutis (efeito azul suave sem trocar o fundo do header) */
+.site-nav a:hover,
+.site-nav a:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(66,121,171,0.08);
+  background: rgba(255,255,255,0.06);
+  color: var(--branco);
+  outline: none;
 }
+.site-nav a:active { transform: translateY(-1px); }
 
 /* HERO (AZUL) */
 .hero {
@@ -300,4 +311,8 @@ main {
   .about, .history, .contact {
     padding: 25px 20px;
   }
+}
+@media (max-width:880px){
+  .site-header { flex-direction: column; gap:12px; padding:14px; text-align:center; }
+  .site-nav ul { justify-content:center; flex-wrap:wrap; gap:8px; }
 }
