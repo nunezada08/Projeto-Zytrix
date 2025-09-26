@@ -106,6 +106,7 @@ header:hover{
   height: 40px;
 }
 #icon-local:hover {
+
    background-color: #7a3740;
    border-radius: 50%;
    transition: 0.3s;
@@ -131,6 +132,7 @@ header:hover{
 h1 {
   width: 500px;
   height: 64px;
+
   font-family: "TASA Explorer";
   font-size: 55px;
   font-style: normal;
@@ -161,6 +163,7 @@ h1 {
 }
 .texto-da-marca{
   padding: 40px;
+
   height: auto;
   width: 25%;
   display:flex;
@@ -170,12 +173,14 @@ h1 {
   margin: 29px;
   transition: 0.7s;
   justify-content: space-between;
+
 }
 .texto-da-marca:hover{
   background-color: #7c5156;
    transition: 0.7s;
    color:rgb(58, 9, 9)
 }
+
 .saiba-mais{
   height: -300px;
   width: 0px auto;
@@ -185,6 +190,5 @@ h1 {
   padding: 20px 25px;
   justify-content: center;
   color: #000000;
-  
-
 }
+

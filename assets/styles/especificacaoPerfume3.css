@@ -51,10 +51,9 @@ header h1 {
   width: 25px;
   margin-left: 12px;
   cursor: pointer;
-  filter: brightness(0) invert(1); /* Aplica cor branca */
+  filter: brightness(0) invert(1);
   transition: transform 0.3s ease;
 }
-
 
 .icones img:hover {
   transform: scale(1.15);
@@ -121,7 +120,7 @@ header h1 {
 }
 
 .bloco-unido .secao:last-child {
-  border-bottom: none; /* Remove a linha inferior da última seção para estética e evitar linha "sobrando" no final */
+  border-bottom: none;
 }
 
 .comentarios {
@@ -182,6 +181,5 @@ footer {
   text-transform: lowercase;
   width: 100%;
 }
-
 
 

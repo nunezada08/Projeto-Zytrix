@@ -1,0 +1,324 @@
+/* Reset e tipografia do css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Libre Baskerville", Georgia, serif;
+  line-height: 1.6;
+  padding-bottom: 0;
+  font-size: 18px;
+  scroll-behavior: smooth;
+background-color: rgb(122, 31, 36);
+}
+
+/* Container principal */
+main {
+  max-width: 980px;
+  margin: 36px auto;
+  padding: 0 20px;
+  background-color: #701719;
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 28px;
+  background: rgb(0, 0, 0);
+  backdrop-filter: blur(8px);
+  border-bottom: 2px solid rgba(221, 21, 34, 0.12);
+  box-shadow: 0 6px 18px rgba(231, 37, 37, 0.12);
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+}
+.brand h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  background: linear-gradient(
+    180deg,
+  #a47a1e 0%,
+  #ffec94 50%,
+  #ffffff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+}
+.brand .tag {
+  font-size: 1rem;
+  background: linear-gradient(
+    180deg,
+  #a47a1e 0%,
+  #ffec94 50%,
+  #ffffff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.9;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+/* Navegação tudo ok */
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.site-nav a {
+  font-weight: 700;
+  background: linear-gradient(
+    180deg,
+  #a47a1e 0%,
+  #ffec94 50%,
+  #ffffff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  box-shadow: 0 0 0 rgba(83, 72, 6, 0);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  background: linear-gradient(
+    180deg,
+  #a47a1e 0%,
+  #ffec94 50%,
+  #ffffff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(92, 90, 7, 0.3);
+  outline: none;
+  font-size: 20px;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+
+  border-radius: 14px;
+  padding: 48px 30px;
+  background: linear-gradient(
+    135deg,
+  #f4efe6 0%, #eaf7ff 100%
+  );
+  box-shadow: 0 14px 40px rgba(238, 231, 232, 0.25);
+    border: 1px solid #110806;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.hero-inner {
+  max-width: 620px;
+}
+.hero h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  color: #000000;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+.lead {
+  font-size: 1.15rem;
+  color: #4d0c14;
+  font-weight: 600;
+  opacity: 0.95;
+  line-height: 1.5;
+  font-family: "Libre Baskerville", serif;
+}
+
+/* Funciona? não (imagem do perfume) */
+.bottle {
+  width: 140px;
+  height: 200px;
+  border-radius: 20px;
+  background-size: contain;
+
+  transform: rotate(-6deg);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.bottle:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 20px 40px rgba(66, 7, 11, 0.5);
+}
+
+/* About e etc */
+.about {
+  margin-top: 28px;
+  padding: 28px;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+  #f4efe6 0%, #eaf7ff 100%
+  );
+  border: 1px solid #110806;
+  box-shadow: 0 10px 30px rgba(107, 15, 27, 0.12);
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.1rem;
+  color: #4a1a1f;
+}
+.about h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+/* — azure meio creme */
+.history {
+  margin-top: 28px;
+  padding: 30px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #f4efe6 0%, #eaf7ff 100%);
+  border: 1px solid #110806;
+  box-shadow: 0 14px 40px rgba(216, 10, 10, 0.08);
+  color: #4e140d;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.history h3 {
+  font-family: "Playfair Display", serif;
+  color: #000000;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+.history p {
+  margin: 14px 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #3b2d2c;
+}
+
+/* Contatos ficticios */
+.contact {
+  margin-top: 24px;
+  padding:  22px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f4efe6 0%, #eaf7ff 100%);
+  box-shadow: 0 14px 40px rgba(216, 10, 10, 0.08);
+  border: 1px solid #110806;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.1rem;
+  color: #000000;
+}
+.contact a {
+  color: #000000;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+.contact a:hover,
+.contact a:focus {
+  color: #000000;
+  outline: none;
+}
+
+
+/* Efeitos maneiros */
+.history p:hover {
+  box-shadow: 0 8px 20px #000000;
+  border-radius: 8px;
+  padding: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Efeitos de transição */
+body {
+  transition: background 0.5s ease;
+}
+
+/* Sombras tops */
+h2,
+h3 {
+  transition: all 0.3s ease;
+}
+
+
+h2:hover,
+h3:hover {
+  background: linear-gradient(
+    180deg,
+  #a47a1e 0%,
+  #796b30 50%,
+  #000000 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Libre Baskerville", serif;
+}
+
+.site-footer p {
+  background: linear-gradient(
+    180deg,
+    #a47a1e 0%,
+    #ffec94 50%,
+    #ffffff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.site-footer .social {
+  margin-bottom: 10px;
+}
+
+.site-footer .social a {
+  color: #ffec94;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.site-footer .social a:hover {
+  color: #ffffff;
+}

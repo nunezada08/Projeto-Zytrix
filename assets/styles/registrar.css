@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap");
 
 * {
-    font-family: "TASA Explorer", sans-serif;
+    font-family: "TASA Explorer", sans-serif;;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(180deg, #7A3740 0%, #843C45 35%, #E06576 100%);
     overflow: hidden;
+
 }
 
 #container{
@@ -39,7 +39,7 @@ body {
 
 }
 
-#login-container {
+#registrar-container {
 
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -61,10 +61,10 @@ body {
     width: 42%
 }
 
-#text-container img {
 
-    margin-top: 10px;
+#text-container img {
     margin-left: -20px;
+    margin-top: 10px;
 }
 
 #text-container p {
@@ -72,7 +72,7 @@ body {
     font-size: 18px;
 }
 
-#text-container #fazer-login {
+#text-container #registrar-se {
 
     padding-bottom: 1.3rem;
     font-size: 42px;
@@ -98,8 +98,7 @@ body {
     height: 26px;
 }
 
-#login {
-
+#registre-se {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,8 +109,7 @@ body {
     transition: all 0.6s ease;
 }
 
-#login:hover {
-
+#registre-se:hover {
     background: linear-gradient(180deg, #7A3740 0%, #843C45 35%, #E06576 100%);
     color: white;
     cursor: pointer;
@@ -119,7 +117,6 @@ body {
 }
 
 .interacao-usuario input {
-
     margin-top: 5px;
     border: none;
     outline: none;
@@ -127,33 +124,4 @@ body {
     font-size: 1rem;
     width: 100%;
     padding-left: 2px;
-}
-
-#registrar {
-
-    margin-top: -30px;
-    color: white;
-    font-size: 1rem;
-    text-align: center;
-}
-
-#registrar a {
-
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-#registrar a:hover {
-    transition: all 0.5s ease;
-    background: linear-gradient(180deg,#f80606 0%,#573939 44.71%, #4d4242 70.67%, #756565 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
-}
-
-#cadeadoIcon {
-
-    margin-top: 5px;
 }
