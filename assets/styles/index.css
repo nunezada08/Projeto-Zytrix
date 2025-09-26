@@ -5,17 +5,15 @@
 }
 
 body {
-  background-color: #7a3740;
+  background-color: #9b8c8c;
 }
 
 header {
-  background-color: floralwhite;
+  background-color: rgb(31, 30, 29);
   display: flex;
-  padding: 20px 25px;
   padding: 2px 25px;
   justify-content: space-between;
   text-align: center;
-  /* gap: 38%; */
 
 }
 
@@ -27,19 +25,66 @@ header:hover{
   text-align: center;
   transition: 0.7s;
 }
+.slider {
+  width: 90%;
+  position: relative;
+  margin: 40px auto;
+}
+
+.slides {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#slide1:checked ~ .slides .s1,
+#slide2:checked ~ .slides .s2,
+#slide3:checked ~ .slides .s3 {
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.navigation label {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #bbb;
+  margin: 0 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#slide1:checked ~ .navigation label[for="slide1"],
+#slide2:checked ~ .navigation label[for="slide2"],
+#slide3:checked ~ .navigation label[for="slide3"] {
+  background: #333;
+}
 #inicio{
   margin-top: 30px;
   padding: 15px;
-}
-#imagem-inicio {
-  width: 100%;
-  display: block;
-  border-radius: 25px;
-}
-#imagem-inicio:hover {
-   border: 1px solid rgb(53, 8, 8) ;
-   transition: 0.5s;
-   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .btn{
@@ -50,19 +95,18 @@ header:hover{
 .icons {
   display: flex;
   gap: 5px;
-  padding: 12px;
   padding: 13px;
   justify-content: space-between;
   display: flex;
-  height: 60px;
+  height: 64px;
   margin: 10px;
 }
-#icon-pessoa{
-  width: 37px;
-}
 
+#icon-pessoa {
+  height: 40px;
+}
 #icon-local:hover {
-   background-color: #b1a5a5;
+
    background-color: #7a3740;
    border-radius: 50%;
    transition: 0.3s;
@@ -86,8 +130,9 @@ header:hover{
    transition: 0.3s;
 }
 h1 {
-  width: 129px;
-  height: 54px;
+  width: 500px;
+  height: 64px;
+
   font-family: "TASA Explorer";
   font-size: 55px;
   font-style: normal;
@@ -98,7 +143,7 @@ h1 {
     #f80606 0%,
     #573939 44.71%,
     #4d4242 70.67%,
-    #756565 100%
+    #333131 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -106,10 +151,19 @@ h1 {
   justify-content: space-between;
 }
 #marca {
-  margin-top: 30px;
+  font-size: 40px;
+  background: linear-gradient(180deg, #a47a1e 0%, #ffec94 50%, #ffffff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: auto;
+  position: relative;
+  top: 25px;
+  right: 80px;
 }
-.texto-da-marca-perfumes{
-  padding: 50px;
+.texto-da-marca{
+  padding: 40px;
+
   height: auto;
   width: 25%;
   display:flex;
@@ -119,13 +173,12 @@ h1 {
   margin: 29px;
   transition: 0.7s;
   justify-content: space-between;
-   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
 }
-.texto-da-marca-perfumes:hover{
-  background-color: #000000;
+.texto-da-marca:hover{
+  background-color: #7c5156;
    transition: 0.7s;
-   color:rgb(241, 235, 235);
-   box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+   color:rgb(58, 9, 9)
 }
 
 .saiba-mais{
@@ -137,6 +190,5 @@ h1 {
   padding: 20px 25px;
   justify-content: center;
   color: #000000;
-  
-
 }
+
