@@ -18,7 +18,7 @@
 }
 
 header {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,10 +50,7 @@ header {
 #marca {
   display: flex;
   font-size: 40px;
-  background: linear-gradient(180deg, #a47a1e 0%, #ffec94 50%, #ffffff 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgb(0, 51, 102);
   align-items: center;
   justify-content: center;
 }
@@ -64,7 +61,7 @@ header {
 
 }
 #logout a{
-  color: #ffec94;
+  color: rgb(0, 51, 102);
   display: flex;
   font-size: 20px;
   margin-right: 25px;
@@ -78,7 +75,7 @@ a:hover{
 
 body {
   min-height: 100vh;
-  background: rgb(122,31,36);
+  background: rgb(191,207 ,219 );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,6 +125,7 @@ main {
    background-color: #ffffff;
    border-radius: 43px;
    color: black;
+   padding: 5%;
 }
 
 .box{
@@ -135,14 +133,14 @@ main {
   flex-direction: column; 
   justify-content: center; 
   align-items: center;
-  border: #a47a1e solid 5px;
+  border:black  solid 5px;
   width: 550px;
   height: 350px;
-  background-color:  rgb(70, 17, 19);;
+  background-color:  rgb(255, 255, 255);;
   margin:20px; 
   box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 
@@ -161,7 +159,7 @@ main {
 }
 
 #textao{
-  color: #a47a1e;
+  color: rgb(0, 51, 102);
   justify-content: center;
   display: flex;
   text-align: start;
@@ -177,10 +175,11 @@ main {
 footer{
   text-align: center;
   padding: 15px 0; /* Ajuste o padding para não ter laterais */
-  background-color: rgba(49, 12, 13, 0.445);
-  color:#a47a1e ;
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 51, 102) ;
   text-transform: lowercase;
   width: 100%; 
+  border-top: rgb(0, 51, 102) 4px solid;
 }
 
 
