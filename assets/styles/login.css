@@ -153,32 +153,7 @@ body {
     cursor: pointer;
 }
 
+#cadeadoIcon {
 
-@media (max-width: 1200px) {
-    #container {
-        width: 95vw;
-        min-width: 320px;
-        max-width: 1000px;
-        gap: 20px;
-    }
-    #login-container, .interacao-usuario {
-        width: 90vw;
-        max-width: 450px;
-    }
-}
-
-@media (max-width: 700px) {
-    #container {
-        flex-direction: column;
-        height: auto;
-        padding: 20px 0;
-    }
-    #text-container {
-        margin: 0 0 20px 0;
-        align-items: center;
-        text-align: center;
-    }
-    #login-container {
-        padding-right: 0;
-    }
+    margin-top: 5px;
 }
