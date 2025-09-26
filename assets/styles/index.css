@@ -5,11 +5,11 @@
 }
 
 body {
-  background-color: #9b8c8c;
+ background: rgb(191,207,219)
 }
 
 header {
-  background-color: rgb(31, 30, 29);
+  background-color: rgb(255, 255, 255);
   display: flex;
   padding: 2px 25px;
   justify-content: space-between;
@@ -36,6 +36,9 @@ header:hover{
   height: 100%;
   overflow: hidden;
   position: relative;
+  border: 2px solid#000000;
+  border-radius: 15px;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .slide {
@@ -105,6 +108,9 @@ header:hover{
 #icon-pessoa {
   height: 40px;
 }
+#icon-sacola{
+  height: 40px;
+}
 #icon-local:hover {
 
    background-color: #7a3740;
@@ -138,13 +144,7 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 83.333% */
-  background: linear-gradient(
-    180deg,
-    #f80606 0%,
-    #573939 44.71%,
-    #4d4242 70.67%,
-    #333131 100%
-  );
+  background: #070707;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -152,7 +152,7 @@ h1 {
 }
 #marca {
   font-size: 40px;
-  background: linear-gradient(180deg, #a47a1e 0%, #ffec94 50%, #ffffff 100%);
+  background: rgb(0, 51, 102);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -161,6 +161,16 @@ h1 {
   top: 25px;
   right: 80px;
 }
+.perfumes-inicio{
+  font-size: 40px;
+  background: rgb(0, 51, 102);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  top: 25px;
+  right: 80px;
+ left: 400px;
+}
 .texto-da-marca{
   padding: 40px;
 
@@ -168,19 +178,32 @@ h1 {
   width: 25%;
   display:flex;
   background: #faf8f8;
-  border-radius: 45PX;
+  border-radius: 10PX;
   margin-top: 30%;
   margin: 29px;
   transition: 0.7s;
   justify-content: space-between;
-
 }
 .texto-da-marca:hover{
-  background-color: #7c5156;
+  background-color: #070707;
    transition: 0.7s;
-   color:rgb(58, 9, 9)
+   color:rgb(241, 241, 241);
+   box-shadow:bisque ;
+}
+.icone{
+  display: flex;
+}
+.icon-perfumes{
+  height:200px;
+  width: 200px;
+  border-radius: 50px;
+  display: flex;
+  margin: 20px;
 }
 
+.texto-perfumes{
+  display:flex;
+}
 .saiba-mais{
   height: -300px;
   width: 0px auto;
