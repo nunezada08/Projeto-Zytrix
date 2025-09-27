@@ -124,3 +124,54 @@ body {
     width: 100%;
     padding-left: 2px;
 }
+
+/* Responsividade para celulares */
+@media (max-width: 700px) {
+    #container {
+        flex-direction: column;
+        width: 98%;
+        height: auto;
+        min-height: 90vh;
+        gap: 0;
+        padding: 20px 0;
+    }
+
+    #registrar-container, #text-container {
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    #registrar-container {
+        padding-right: 0;
+        gap: 1.5rem;
+    }
+
+    #text-container {
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #text-container img {
+        margin: 0 auto 10px auto;
+        display: block;
+    }
+
+    #text-container #registrar-se {
+        font-size: 2rem;
+        padding-bottom: 0.7rem;
+    }
+
+    .interacao-usuario {
+        width: 100%;
+        height: 45px;
+    }
+
+    #registre-se {
+        width: 60%;
+        height: 38px;
+        font-size: 1rem;
+    }
+}
