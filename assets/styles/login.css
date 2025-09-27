@@ -154,3 +154,64 @@ body {
 
     margin-top: 5px;
 }
+
+@media (max-width: 700px) {
+
+    body {
+        overflow: auto;
+    }
+
+    #container {
+        flex-direction: column;
+        width: 98vw;
+        min-width: unset;
+        max-width: 98vw;
+        height: auto;
+        border-radius: 18px;
+        gap: 20px;
+        padding: 18px 0;
+    }
+
+    #text-container {
+        width: 90vw;
+        margin: 0;
+        margin-bottom: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    #text-container img {
+        margin: 0 auto 10px auto;
+        display: block;
+    }
+
+    #text-container #fazer-login {
+        font-size: 2rem;
+        padding-bottom: 0.7rem;
+    }
+
+    #text-container p {
+        font-size: 1rem;
+    }
+
+    #login-container {
+        width: 90vw;
+        padding: 0;
+    }
+
+    .interacao-usuario {
+        width: 100%;
+        height: 44px;
+    }
+    
+    #login {
+        width: 60%;
+        height: 38px;
+        font-size: 1rem;
+    }
+    
+    #registrar {
+        margin-top: 0;
+        font-size: 0.95rem;
+    }
+}
