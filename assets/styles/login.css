@@ -169,10 +169,14 @@ body {
         min-height: 100vh;
         border-radius: 0;
         gap: 0;
+        box-shadow: none;
         max-width: 100vw;
+        transition: none;
     }
 
     #container:hover {
+        width: 100%;
+        height: auto;
         box-shadow: none;
     }
 
