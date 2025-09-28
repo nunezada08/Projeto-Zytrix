@@ -187,5 +187,6 @@ body {
         min-width: 120px;
         height: 38px;
         font-size: 1rem;
+        margin-bottom: 10px;
     }
 }
