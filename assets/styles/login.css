@@ -175,7 +175,7 @@ body {
     }
 
     #container:hover {
-        width: 100%;
+        width: 98%;
         height: auto;
         box-shadow: none;
     }
