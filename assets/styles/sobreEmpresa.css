@@ -313,3 +313,43 @@ main {
   .site-header { flex-direction: column; gap:12px; padding:14px; text-align:center; }
   .site-nav ul { justify-content:center; flex-wrap:wrap; gap:8px; }
 }
+
+/* Perfumes */
+.perfumes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.perfume-card {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.perfume-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.perfume-card img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.perfume-card img:hover {
+  transform: scale(1.05);
+}
+
+.perfume-card p {
+  font-size: 1rem;
+  color: var(--grafite);
+  line-height: 1.6;
+}
