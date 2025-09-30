@@ -8,170 +8,277 @@
 }
 
 body {
-  background-color: rgb(122, 31, 36);
-  color: #ffec94;
-}
-
-header {
-  background-color: black;
-  padding: 15px 20px;
+  min-height: 100vh;
+  background: rgb(191, 207, 219);
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.espaco {
-  flex: 1;
+header {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 20px;
 }
 
-header h1 {
-  font-size: 45px;
-  font-weight: 400;
-  text-align: center;
+#logo-empresa img {
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+#logo-empresa:hover img {
+  transform: scale(1.2);
+}
+
+#titulo {
   flex: 1;
-  text-transform: lowercase;
-  background: linear-gradient(180deg, #a47a1e 0%, #ffec94 50%, #ffffff 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+#titulo h1 {
+  font-size: 40px;
+  color: rgb(0, 51, 102);
 }
 
 .icones {
-  flex: 1;
   display: flex;
-  justify-content: flex-end;
+  gap: 15px;
 }
 
 .icones img {
-  width: 25px;
-  margin-left: 12px;
+  width: 28px;
   cursor: pointer;
-  filter: brightness(0) invert(1);
   transition: transform 0.3s ease;
 }
 
 .icones img:hover {
-  background-color: #ffffff;
-  border-radius: 5px;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
-.container {
-  margin: 20px auto;
-  background-color: rgb(70, 17, 19);
+.bloco-unico {
+  margin: 40px auto;
+  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
+  max-width: 1000px;
+  border: 4px solid rgb(0, 51, 102);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.produto-detalhes {
   display: flex;
   gap: 20px;
-  max-width: 900px;
-  border: 4px solid #a47a1e;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
-  color: #ffec94;
+  width: 100%;
+}
+
+.produto {
+  max-width: 200px;
+  flex-shrink: 0;
 }
 
 .produto img {
-  width: 100%;
-  max-width: 300px;
+  width: 80%;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.produto:hover img {
+  transform: scale(1.1);
 }
 
 .detalhes {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgb(0, 51, 102);
+}
+
+.nome {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.preco {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.nota {
+  margin-top: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.nota .estrelas {
+  color: rgb(64, 64, 64);
 }
 
 .botao {
-  background-color: #a47a1e;
-  color: black;
+  background-color: rgb(0, 51, 102);
+  color: #fff;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-weight: bold;
+  transition: all 0.3s ease;
+  width: fit-content;
 }
 
 .botao:hover {
-  background-color: #ffec94;
-  color: #000;
-}
-
-.bloco-unido {
-  margin: 20px auto;
-  background-color: rgb(70, 17, 19);
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 900px;
-  border: 4px solid #a47a1e;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
-  color: #ffec94;
-}
-
-.bloco-unido .secao {
-  margin: 0;
-  padding: 15px 0;
-  border-bottom: 1px solid #ffec94;
-}
-
-.bloco-unido .secao:last-child {
-  border-bottom: none; /* Remove a linha inferior da última seção para estética e evitar linha "sobrando" no final */
+  background-color: #003366cc;
+  transform: scale(1.05);
 }
 
 .comentarios {
-  margin: 20px auto;
+  margin-top: 0;
   padding: 15px;
-  background-color: rgb(70, 17, 19);
+  background-color: rgb(191, 207, 219);
   border-radius: 10px;
-  max-width: 900px;
-  border: 4px solid #a47a1e;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
-  color: #ffec94;
+  border: 2px solid rgb(0, 51, 102);
+  width: 100%;
+}
+
+.comentarios h2 {
+  margin-bottom: 15px;
+  color: rgb(0, 51, 102);
+  font-size: 24px;
 }
 
 .comentario {
   margin-bottom: 15px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.usuario {
+.usuario-nota {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: bold;
-  color: white;
+  color: rgb(0, 51, 102);
+  margin-bottom: 5px;
 }
 
 .estrelas {
-  color: #ffec94;
-  display: block;
-  margin-top: 2px;
+  color: rgb(64, 64, 64);
+  font-size: 16px;
 }
 
-.mostrar-more {
+.texto-comentario {
+  margin-top: 5px;
+  color: rgb(0, 51, 102);
+}
+
+.informacoes-extra {
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1000px;
+  border: 4px solid rgb(0, 51, 102);
+  color: rgb(0, 51, 102);
+}
+
+.secao {
+  margin-bottom: 20px;
+}
+
+.secao h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.outros-titulo {
+  margin-top: 40px;
+  font-size: 26px;
   text-align: center;
-  margin-top: 10px;
+  color: rgb(0, 51, 102);
 }
 
-.mostrar-mais {
-  background: transparent;
-  color: #ffec94;
-  border: 2px solid #ffec94;
-  padding: 8px 16px;
+.outros-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.outro-perfume {
+  flex: 1;
+  background-color: #fff;
+  border: 3px solid rgb(0, 51, 102);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.outro-perfume:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.outro-perfume img {
+  width: 100%;
+  max-width: 120px;
+  margin-bottom: 10px;
   border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background-color 180ms ease, color 180ms ease, transform 120ms ease, box-shadow 180ms ease;
+  transition: transform 0.3s ease;
+  object-fit: contain;
+  height: 150px;
 }
 
-.mostrar-mais:hover {
-  background-color: #ffec94;
-  color: #000;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+.outro-preco {
+  font-weight: bold;
+  color: rgb(0, 51, 102);
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background-color: rgba(49, 12, 13, 0.445);
-  color: #a47a1e;
+  background-color: white;
+  color: rgb(0, 51, 102);
   margin-top: 20px;
-  text-transform: lowercase;
+  width: 100%;
 }
 
+@media (max-width: 900px) {
+  .bloco-unico {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .informacoes-extra {
+    width: 90%;
+  }
 
+  .outros-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .outro-perfume {
+    width: 100%;
+    max-width: 300px;
+  }
+}
