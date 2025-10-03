@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap");
+
 * {
+  font-family: "TASA Explorer", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -44,7 +47,6 @@ header {
   display: flex;
   font-size: 20px;
   margin-left: 25px;
-  transition: transform 0.3s ease;
   text-decoration-line: none;
   text-decoration: none;
 }
@@ -123,10 +125,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-.perfume :hover {
-  transition: all 0.5s;
-  transform: scale(1.05);
-}
 
 .botao-mais p {
   color: white;
@@ -135,9 +133,7 @@ main {
   height: 90px;
   transition: transform 0.3s ease;
 }
-.perfume :hover img {
-  transform: scale(1.25);
-}
+
 #total {
   display: flex;
   padding: 180px;
