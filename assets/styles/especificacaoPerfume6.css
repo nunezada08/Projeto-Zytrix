@@ -25,7 +25,7 @@ header {
 }
 
 #logo-empresa img {
-  height: 60px;
+  height: 80px;
   transition: transform 0.3s ease;
 }
 
@@ -50,7 +50,7 @@ header {
 }
 
 .icones img {
-  height: 40px;
+  width: 40px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
