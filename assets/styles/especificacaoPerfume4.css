@@ -84,6 +84,8 @@ header {
 
 .produto img {
   width: 80%;
+  height: 300px;
+  object-fit: contain;
   border-radius: 10px;
   transition: transform 0.3s ease;
   margin-top: 20px;
@@ -253,6 +255,8 @@ header {
   margin-bottom: 10px;
   border-radius: 8px;
   transition: transform 0.3s ease;
+  object-fit: contain;
+  height: 150px;
 }
 
 .outro-perfume:hover img {
