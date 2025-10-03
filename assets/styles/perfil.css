@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap");
+
 * {
+  font-family: "TASA Explorer", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -120,12 +123,12 @@ main {
   height: 30%;
   
 }
-.container :hover{
+.box:hover{
    transition: all 0.5s ease;
    background-color: #ffffff;
-   border-radius: 43px;
    color: black;
-   padding: 5%;
+   padding: 3%;
+   box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
 }
 
 .box{
@@ -138,9 +141,9 @@ main {
   height: 350px;
   background-color:  rgb(255, 255, 255);;
   margin:20px; 
-  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
   color: rgb(0, 0, 0);
+  border-radius: 43px;
 }
 
 
@@ -167,7 +170,7 @@ main {
 
 p{
   display: flex;
-  margin-top: 5px;
+ margin-top: 5px;
   text-align: center;
 }
 

@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap");
+
 * {
+  font-family: "TASA Explorer", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -44,7 +47,6 @@ header {
   display: flex;
   font-size: 20px;
   margin-left: 25px;
-  transition: transform 0.3s ease;
   text-decoration-line: none;
   text-decoration: none;
 }
@@ -74,8 +76,8 @@ body {
 }
 
 main {
-  flex: 1;
-  min-height: 100vh;
+  flex-grow: 1; /* Permite que o conteúdo principal se expanda, empurrando o footer para baixo */
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,10 +126,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-.perfume :hover{
-  transition: all 0.5s;
-  transform: scale(1.05)
-}
 
 .botao-mais p {
   color: white;
@@ -151,38 +149,52 @@ main {
   height: 90px;
   transition: transform 0.3s ease;
 }
-.perfume :hover img {
-  transform: scale(1.25);
 
-}
- #total {
+#total {
   display: flex;
   padding: 180px;
   padding-bottom: 30px;
-  padding-top:34px;
+  padding-top: 34px;
   border-radius: 10px;
   width: 210px;
   border: rgb(0, 51, 102) 4px solid;
   background-color: white;
   gap: 20px;
-  
+  margin-right: 16px;
   align-items: center;
   flex-direction: column;
 }
 
-#total h1{
-  color:rgb(0, 51, 102) ;
+#total h1 {
+  color: rgb(0, 51, 102);
   align-items: center;
 }
-#total hr{
+#total hr {
   width: 180px;
 }
-#total p{
+#total p {
   gap: 20%;
   justify-content: end;
   width: 200px;
 }
-#total-final{
-color:rgb(0, 51, 102);
-font-size: 22px;
+#total-final {
+  color: rgb(0, 51, 102);
+  font-size: 22px;
+}
+
+#preco {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 5px 0; /* Ajuste o padding para não ter laterais */
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 51, 102);
+  text-transform: lowercase;
+  width: 100%;
+  border-top: rgb(0, 51, 102) 4px solid;
+  margin-top: 20px;
 }
