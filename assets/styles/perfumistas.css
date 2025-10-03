@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+  
+body{
+   background: rgb(191,207,219)
+}
+  
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 2px 25px;
+    justify-content: space-between;
+    text-align: center;
+ }
+#marca{
+    font-size: 40px;
+    background: rgb(0, 51, 102);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: auto;
+    position: relative;
+    top: 25px;
+    right: 80px;
+    margin-left: 12%;
+}
+.icons {
+    display: flex;
+    gap: 5px;
+    padding: 13px;
+    justify-content: space-between;
+    display: flex;
+    height: 64px;
+    margin: 10px;
+  }
+  
+  #icon-pessoa {
+    height: 40px;
+  }
+  #icon-sacola{
+    height: 40px;
+  }
+  #icon-local:hover {
+  
+     background-color: rgb(0, 51, 102);
+     border-radius: 50%;
+     transition: 0.3s;
+  }
+  
+  #icon-lupa:hover {
+     background-color: rgb(0, 51, 102);
+     border-radius: 50%;
+     transition: 0.3s;
+  }
+  
+  #icon-pessoa:hover {
+     background-color: rgb(0, 51, 102);
+     border-radius: 50%;
+     transition: 0.3s;
+  }
+  
+  #icon-sacola:hover {
+     background-color: rgb(0, 51, 102);
+     border-radius: 50%;
+     transition: 0.3s;
+  }
+  h1 {
+    width: 500px;
+    height: 64px;
+  
+    font-family: "TASA Explorer";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 83.333% */
+    background: #070707;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    justify-content: space-between;
+  }
