@@ -75,6 +75,9 @@ body {
 main {
   flex-grow: 1; /* Permite que o conteúdo principal se expanda, empurrando o footer para baixo */
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #section-align {
