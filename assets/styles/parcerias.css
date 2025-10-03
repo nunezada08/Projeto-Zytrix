@@ -314,14 +314,14 @@ main {
   .site-nav ul { justify-content:center; flex-wrap:wrap; gap:8px; }
 }
 
-/* Perfumes */
-.perfumes-grid {
+/* Marcas Parceiras */
+.marcas-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
-.perfume-card {
+.marca-card {
   text-align: center;
   padding: 20px;
   background: rgba(255,255,255,0.8);
@@ -330,12 +330,12 @@ main {
   transition: all 0.3s ease;
 }
 
-.perfume-card:hover {
+.marca-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-.perfume-card img {
+.marca-card img {
   width: 150px;
   height: auto;
   border-radius: 10px;
@@ -344,11 +344,11 @@ main {
   transition: transform 0.3s ease;
 }
 
-.perfume-card img:hover {
+.marca-card img:hover {
   transform: scale(1.05);
 }
 
-.perfume-card p {
+.marca-card p {
   font-size: 1rem;
   color: var(--grafite);
   line-height: 1.6;
