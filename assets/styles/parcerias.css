@@ -3,7 +3,7 @@
   --fundo: rgb(191,207,219);
   --branco: rgb(255,255,255);
   --cinza-claro: rgb(211,211,211); /* D3D3D3 */
-  --grafite: rgb(75,75,75);        /* tom grafite */
+  --grafite: rgb(141, 139, 139);        /* tom grafite */
   --azul-claro: rgb(207,229,244);  /* efeitos suaves azuis */
   --azul: rgb(66,121,171);         /* acento azul mais escuro */
   --sombra: rgba(47,47,47,0.12);
@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: "Libre Baskerville", Georgia, serif;
+  font-family: "TASA Explorer", sans-serif;
   padding-bottom: 0;
   font-size: 18px;
   background-color: var(--fundo);
@@ -40,9 +40,9 @@ main {
   align-items: center;
   gap: 20px;
   padding: 16px 24px;
-  background: var(--grafite); /* revertido para grafite */
-  box-shadow: 0 6px 20px var(--sombra);
-  border: 1px solid rgba(255,255,255,0.04);
+  background: var(--branco);
+  box-shadow: none;
+  border: none;
 }
 
 /* Marca */
@@ -52,9 +52,9 @@ main {
   gap: 10px;
 }
 .brand h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "TASA Explorer", sans-serif;
   font-size: 1.25rem;
-  color: var(--branco);
+  color: var(--azul);
   line-height: 1;
   letter-spacing: 0.4px;
 }
@@ -82,9 +82,9 @@ main {
   padding: 8px 12px;
   border-radius: 8px;
   text-decoration: none;
-  font-family: "Playfair Display", serif;
+  font-family: "TASA Explorer", sans-serif;
   font-weight: 700;
-  color: var(--branco);
+  color: var(--azul);
   background: transparent;
   transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
 }
@@ -95,7 +95,7 @@ main {
   transform: translateY(-3px);
   box-shadow: 0 8px 18px rgba(66,121,171,0.08);
   background: rgba(255,255,255,0.06);
-  color: var(--branco);
+  color: var(--azul);
   outline: none;
 }
 .site-nav a:active { transform: translateY(-1px); }
@@ -123,7 +123,7 @@ main {
   max-width: 620px;
 }
 .hero h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "TASA Explorer", sans-serif;
   font-size: 3.2rem;
   color: var(--grafite);
   margin-bottom: 20px;
@@ -133,7 +133,7 @@ main {
   font-size: 1.25rem;
   color: rgba(75,75,75,0.9);
   font-weight: 600;
-  font-family: "Libre Baskerville", serif;
+  font-family: "TASA Explorer", sans-serif;
   line-height: 1.6;
 }
 
@@ -168,7 +168,7 @@ main {
   border-radius: 20px;
   background: var(--branco);
   border: 2px solid var(--grafite);
-  font-family: "Libre Baskerville", serif;
+  font-family: "TASA Explorer", sans-serif;
   font-size: 1.15rem;
   color: var(--grafite);
   line-height: 1.7;
@@ -181,7 +181,7 @@ main {
   transform: translateY(-5px);
 }
 .about h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "TASA Explorer", sans-serif;
   font-size: 1.8rem;
   color: var(--grafite);
   margin-bottom: 20px;
@@ -197,7 +197,7 @@ main {
   background: linear-gradient(135deg, var(--azul-claro) 0%, var(--fundo) 100%);
   border: 2px solid var(--grafite);
   color: var(--grafite);
-  font-family: "Libre Baskerville", serif;
+  font-family: "TASA Explorer", sans-serif;
   font-size: 1.1rem;
   line-height: 1.7;
   transition: all 0.3s ease;
@@ -208,7 +208,7 @@ main {
   transform: translateY(-5px);
 }
 .history h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "TASA Explorer", sans-serif;
   color: var(--grafite);
   margin-bottom: 20px;
   font-weight: 700;
@@ -227,9 +227,9 @@ main {
   border-radius: 20px;
   background: var(--branco);
   border: 2px solid var(--grafite);
-  font-family: "Libre Baskerville", serif;
+  font-family: "TASA Explorer", sans-serif;
   font-size: 1.15rem;
-  color: var(--grafite);
+  color: var(--azul);
   line-height: 1.7;
   transition: all 0.3s ease;
 }
@@ -247,18 +247,15 @@ main {
 
 /* Footer */
 .site-footer {
-  background-color: var(--grafite);
+  background-color: var(--branco);
   padding: 30px;
   text-align: center;
   margin-top: 60px;
-  font-family: "Libre Baskerville", serif;
+  font-family: "TASA Explorer", sans-serif;
 }
 
 .site-footer p {
-  background: linear-gradient(180deg, var(--azul) 0%, var(--branco) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--azul);
   font-weight: 700;
   font-size: 1.1rem;
   margin: 15px 0;
