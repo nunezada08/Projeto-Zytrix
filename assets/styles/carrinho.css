@@ -139,12 +139,7 @@ main {
   background-color: white;
   box-sizing: border-box; /*garante que o padding não estoure o limite do body*/
 }
-#total h1{
-  background-color:black ;
-}
-#total p{
-  background-color: black;
-}
+
 .perfume img {
   height: 90px;
   transition: transform 0.3s ease;
