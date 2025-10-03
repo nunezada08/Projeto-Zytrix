@@ -66,6 +66,7 @@ header {
 
 body {
   min-height: 100vh;
+  min-width: 100vw;
   background: rgb(191, 207, 219);
   display: flex;
   flex-direction: column;
@@ -73,9 +74,11 @@ body {
 }
 
 main {
-  flex-grow: 1; /* Permite que o conteúdo principal se expanda, empurrando o footer para baixo */
-  width: 100%;
-
+  flex: 1;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #section-align {
@@ -129,6 +132,21 @@ main {
 .botao-mais p {
   color: white;
 }
+
+#total {
+  padding: 180px;
+  border-radius: 10px;
+  width: 380px;
+  border: rgb(0, 51, 102) 4px solid;
+  background-color: white;
+  box-sizing: border-box; /*garante que o padding não estoure o limite do body*/
+}
+#total h1{
+  background-color:black ;
+}
+#total p{
+  background-color: black;
+}
 .perfume img {
   height: 90px;
   transition: transform 0.3s ease;
@@ -168,7 +186,3 @@ main {
 color:rgb(0, 51, 102);
 font-size: 22px;
 }
-
-
-
-
