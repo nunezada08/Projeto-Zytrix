@@ -14,7 +14,6 @@ header {
   padding: 2px 25px;
   justify-content: space-between;
   text-align: center;
-
 }
 
 
@@ -153,6 +152,7 @@ h1 {
   position: relative;
   top: 25px;
   right: 80px;
+  margin-left: 12%;
 }
 .perfumes-inicio{
   font-size: 40px;
