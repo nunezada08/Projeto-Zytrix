@@ -164,25 +164,6 @@ h1 {
   left: 400px;
 text-align: center;
 }
-.texto-da-marca{
-  padding: 40px;
-
-  height: auto;
-  width: 25%;
-  display:flex;
-  background: #faf8f8;
-  border-radius: 10PX;
-  margin-top: 30%;
-  margin: 29px;
-  transition: 0.7s;
-  justify-content: space-between;
-}
-.texto-da-marca:hover{
-  background-color: #070707;
-   transition: 0.7s;
-   color:rgb(241, 241, 241);
-   box-shadow:bisque ;
-}
 .icone{
   display: flex;
 }
@@ -192,7 +173,7 @@ text-align: center;
   border-radius: 50px;
   display: flex;
   margin: 20px;
-
+ 
 }
 .perfumes:hover{
   transition: 0.7s;
@@ -202,21 +183,19 @@ text-align: center;
 
 .perfumes{
   background-color: #faf8f8;
-  width: 22vh;
-  height: 30vh;
+  width: 40vh;
+  height: 50vh;
   margin: 28px;
  border-radius: 0px;
- text-align: center;
-
+display: flex;
+justify-content: center;
+align-items: center;
 }
-
 .perfumes:hover{
   transition: 0.7s;
  transform: scale(1.10);
 }
-.texto-perfumes{
-  display:flex;
-}
+
 .saiba-mais{
   height: -300px;
   width: 0px auto;
@@ -233,6 +212,14 @@ footer{
   color:rgb(0, 51, 102) ;
   width: 100%; 
   
+}
+
+.allPerfumes{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 
