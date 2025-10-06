@@ -131,7 +131,6 @@ header {
 
 .botao {
   background-color: rgb(0, 51, 102);
-  color: #fff;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
@@ -140,6 +139,11 @@ header {
   font-weight: bold;
   transition: all 0.3s ease;
   width: fit-content;
+}
+
+.botao a{
+  color: #fff;
+  text-decoration: none;
 }
 
 .botao:hover {
