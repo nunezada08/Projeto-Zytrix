@@ -39,7 +39,7 @@ main {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 16px 24px;
+  padding: 12px 24px;
   background: var(--branco);
   box-shadow: none;
   border: none;
@@ -248,7 +248,7 @@ main {
 /* Footer */
 .site-footer {
   background-color: var(--branco);
-  padding: 30px;
+  padding: 25px;
   text-align: center;
   margin-top: 60px;
   font-family: "TASA Explorer", sans-serif;
