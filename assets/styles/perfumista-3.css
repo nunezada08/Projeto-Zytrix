@@ -67,44 +67,63 @@ header {
      border-radius: 50%;
      transition: 0.3s;
   }
-  h1 {
+
+ h1 {
     font-family: "TASA Explorer";
     font-size: 55px;
     font-style: normal;
     font-weight: 400;
-    background: #7a624b;
+    background: #7a4b4b;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     justify-content: space-between;
     margin: 20px;
   }
-#perfumista-1{
-    margin: 30px;
-    border-radius: 30px;
-    border: 2px solid black;
-}
-#perfumista-1:hover{
-    transform: scale(1.05);
-    transition: 0.3s;
-    box-shadow: 10px 10px 35px rgba(0,0,0,0.3);
-}
 
-.texto-1{
-   font-family: "TASA Explorer";
-   margin: 20px;
-   font-size: 30px;
+.perfumista {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   }
+
+.Pierre{
+   display: flex;
+   flex-direction: column;
+   margin: 2rem;
+   justify-items: center;
+   align-items: center;
+   text-align: center;
+   background-color: rgb(194, 221, 255);
    border: 2px solid rgb(69, 98, 121);
-   max-width: 700px;
-   background-color: rgb(179, 201, 218);
    border-radius: 10px;
 }
-.texto-1:hover{
-   transform: scale(1.02);
+.Pierre:hover {
+   transform: scale(1.05);
    transition: 0.3s;
-   box-shadow: 10px 10px 35px rgba(0,0,0,0.3);
-   margin: 20px;
+   box-shadow: 10px 10px 35px rgba(0, 0, 0, 0.3);
 }
+
+
+.texto-perfumista{
+   display: flex;
+}
+#perfumista-1 {
+   margin-top: 90px;
+   border-radius: 10px;
+    box-shadow: 10px 10px 35px rgba(0, 0, 0, 0.3);
+}
+
+.texto-1 {
+   font-family: "TASA Explorer";
+   margin: 90px;
+   font-size: 30px;
+   border-radius: 10px;
+   width: 900px;
+   text-align: justify;
+}
+
 .texto{
    font-family: "TASA Explorer";
    margin: 20px;
@@ -125,9 +144,10 @@ p{
    margin: 20px;
    font-size: 30px;
    border: 2px solid rgb(69, 98, 121);
-   max-width:30%;
    background-color: rgb(179, 201, 218);
    border-radius: 10px;
+   justify-content: center;
+   text-align: center;
 }
 p:hover{
    transform: scale(1.02);
@@ -161,11 +181,14 @@ p:hover{
    box-shadow: 10px 10px 35px rgba(0,0,0,0.3);
    margin: 20px;
 }
-footer{
-  padding: 60px 20px; /* Ajuste o padding para não ter laterais */
-  background-color: rgb(194, 221, 255) ;
-  color:rgb(0, 51, 102) ;
-  width: 100%; 
-  justify-content: space-between;
-  display: flex;
+footer {
+  text-align: center;
+  font-size: 20px;
+  padding: 30px 0; /* Ajuste o padding para não ter laterais */
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 51, 102);
+  text-transform: lowercase;
+  width: 100%;
+  border-top: rgb(0, 51, 102) 4px solid;
+  margin-top: 20px;
 }
