@@ -162,10 +162,9 @@ p {
 }
 
 .perfumes-icon:hover {
-   transform: scale(1.05);
    transition: 0.3s;
    box-shadow: 10px 10px 35px rgba(0, 0, 0, 0.3);
-   margin: 20px;
+   transform: scale(1.05);
 }
 
 .nome-perfumista {

@@ -149,12 +149,7 @@ p{
    justify-content: center;
    text-align: center;
 }
-p:hover{
-   transform: scale(1.02);
-   transition: 0.3s;
-   box-shadow: 10px 10px 35px rgba(0,0,0,0.3);
-   margin: 20px;
-}
+
 .perfumes{
    justify-content: space-between;
    display: flex;
@@ -179,7 +174,6 @@ p:hover{
    transform: scale(1.05);
    transition: 0.3s;
    box-shadow: 10px 10px 35px rgba(0,0,0,0.3);
-   margin: 20px;
 }
 footer {
   text-align: center;
